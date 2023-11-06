@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.igasystem.pertest",
+                 "sha256_cert_fingerprints": ["9C:42:4B:04:F2:91:FE:30:33:CD:00:D7:0A:A3:7A:37:6D:AE:0B:F4:DD:4A:BD:68:41:CE:33:1E:A9:10:CB:9E"] }
+}]
