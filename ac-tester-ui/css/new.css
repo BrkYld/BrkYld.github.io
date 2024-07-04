@@ -168,21 +168,31 @@
     color: #1A3352;
 }
 
-#hamburger-menu.container {
+#hamburger-menu.container-collapsed {
     width: 0px;
-    height: 0px;
+    height: 100%;
     background-color: #E5E5E7;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -80%;
     z-index: 1;
+    transition: left 0.5s;
 }
 
 #hamburger-menu.container-expanded {
     width: 80%;
     height: 100%;
+    left: 0;
+    transition: left 0.5s;
+    background-color: #E5E5E7;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: left 0.5s;
 }
 
 .hamburger-header {
@@ -303,7 +313,7 @@
 }
 
 .hidden {
-    display: none !important;
+    visibility: hidden;
 }
 
 .hamburger-app-icon {

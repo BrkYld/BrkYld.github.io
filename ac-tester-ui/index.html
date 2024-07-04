@@ -823,7 +823,7 @@ Commit Message: Update app name
             </div>
         </section>
 
-        <div id="hamburger-menu" class="container hidden">
+        <div id="hamburger-menu" class="container-collapsed hidden">
             <div class="hamburger-header">
                 <span class="hamburger-header-title">Shared App Profiles</span>
             </div>
@@ -907,21 +907,6 @@ Commit Message: Update app name
                                 </div>
                             </div>
                         </li>
-                        <li class="hamburger-menu-list-item">
-                            <div class="hamburger-menu-item">
-                                <div class="image-container">
-                                    <img class="app-icon hamburger-app-icon" src="appicon">
-                                </div>
-                                <div class="description-container">
-                                    <span class="profile-name">App Pofile 3</span>
-                                    <span class="profile-description">Distribution Profile Description</span>
-                                    <span class="version-count">44 shared versions</span>
-                                </div>
-                                <div class="logintype-container">
-                      
-                                </div>
-                            </div>
-                        </li>
                     </ul>
                 </section>
             </div>
@@ -948,6 +933,7 @@ Commit Message: Update app name
                 if (!hamburgerMenu.contains(event.target) && event.target.id != 'hamburger-icon') {
                     $(page).removeClass('blur');
                     $(hamburgerMenu).removeClass('container-expanded');
+                    $(hamburgerMenu).addClass('container-collapsed');
                     $(hamburgerMenu).addClass('hidden');
                     document.body.style.overflow = 'auto';
                     document.body.onclick = null;
@@ -958,6 +944,7 @@ Commit Message: Update app name
 
             $(page).addClass('blur');
             $(hamburgerMenu).removeClass('hidden');
+            $(hamburgerMenu).removeClass('container-collapsed');
             $(hamburgerMenu).addClass('container-expanded');
             document.body.style.overflow = 'hidden';
         }
