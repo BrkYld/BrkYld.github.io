@@ -189,24 +189,24 @@
         /* Büyük tabletler için stil */
         .release-notes .download .create-date, .list-download-container .create-date{
             /* font-size: 16px; */
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
         .release-notes .download .app-name, .list-download-container .app-name{
             /* font-size: 15px; */
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
         .release-notes .download .app-version, .list-download-container .app-version{
             /* font-size: 15px; */
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
         .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
         .release-notes .download .app-file-size, .list-download-container .app-file-size{
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
         .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
-            font-size: 1rem;
+            font-size: 0.75rem;
         }
         .download-button-link{
             font-size: 0.65rem;
@@ -224,29 +224,32 @@
     /* Masaüstü ve büyük ekranlar için stil */
     .release-notes .download .create-date, .list-download-container .create-date{
         /* font-size: 16px; */
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .release-notes .download .app-name, .list-download-container .app-name{
         /* font-size: 15px; */
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .release-notes .download .app-version, .list-download-container .app-version{
         /* font-size: 15px; */
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .release-notes .download .app-file-size, .list-download-container .app-file-size{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .download-button-link{
         font-size: 0.65rem;
     }
     .release-notes .notes .release-notes-title{
         font-size: 1.2rem;
-     }
+    }
+    .read-more{
+        font-size: 1rem;
+    }
 }
