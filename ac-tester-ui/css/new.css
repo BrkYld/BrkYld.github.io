@@ -1,40 +1,51 @@
-.page-summary{
+.page-summary {
     flex-direction: row;
     justify-content: space-between;
 }
-.profile-icon{
+
+.profile-icon {
     width: 30px;
     height: 30px;
 }
-.hamburger-icon{
+
+.hamburger-icon {
     width: 30px;
     height: 20px;
 }
 
-.release-notes .download .create-date, .list-download-container .create-date{
+.blur {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.release-notes .download .create-date,
+.list-download-container .create-date {
     /* font-size: 16px; */
     font-size: 3vw;
 }
 
-.release-notes .download .app-name, .list-download-container .app-name{
+.release-notes .download .app-name,
+.list-download-container .app-name {
     /* font-size: 15px; */
     font-size: 3vw;
-    font-weight:bold;
+    font-weight: bold;
     color: #1A3352;
 }
 
-.release-notes .download .app-version, .list-download-container .app-version{
+.release-notes .download .app-version,
+.list-download-container .app-version {
     /* font-size: 15px; */
     font-size: 3vw;
-    font-weight:normal;
+    font-weight: normal;
     color: #1A3352;
     margin-top: 2px;
 }
 
-.release-notes .container, .list-download-container{
+.release-notes .container,
+.list-download-container {
     display: flex;
     flex-direction: row;
-    flex:1;
+    flex: 1;
     border-bottom: 0px;
 }
 
@@ -44,22 +55,24 @@
     margin: 0 5px 0 0;
 }
 
-.release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
+.release-notes .download .selected-sub,
+.list-download-container .app-file-name,
+.list-download-container .app-unique-name {
     font-size: 3vw;
-    font-weight:normal;
-    text-overflow:ellipsis;
+    font-weight: normal;
+    text-overflow: ellipsis;
     font-family: HelveticaNeue;
     color: #1A3352;
 }
 
-.download-info{
+.download-info {
     display: flex;
     flex-direction: row;
     width: 80%;
     /* background-color: red; */
 }
 
-.download-button-container{
+.download-button-container {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -67,7 +80,7 @@
     align-self: flex-start;
 }
 
-.download-button-link{
+.download-button-link {
     height: 25px;
     align-self: stretch;
     margin: 5px;
@@ -84,7 +97,8 @@
     text-decoration: none;
 }
 
-.release-notes .download .app-file-size, .list-download-container .app-file-size{
+.release-notes .download .app-file-size,
+.list-download-container .app-file-size {
     font-size: 3vw;
     text-align: right;
     margin-right: 5px;
@@ -92,7 +106,8 @@
     font-family: HelveticaNeue;
 }
 
-.release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
+.release-notes .download .app-certificate-type,
+.list-download-container .app-certificate-type {
     font-size: 3vw;
     text-align: right;
     margin-right: 5px;
@@ -100,44 +115,46 @@
     font-family: HelveticaNeue;
 }
 
-.release-notes .notes{
-   padding: 8px;
-   margin: 0px;
+.release-notes .notes {
+    padding: 8px;
+    margin: 0px;
 }
-.release-notes .notes .release-notes-title{
+
+.release-notes .notes .release-notes-title {
     font-size: 3.5vw;
- }
-.pagination-lists .pagination-container{
+}
+
+.pagination-lists .pagination-container {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.seperator{
+.seperator {
     width: 100%;
     height: 1px;
     background-color: #b2c3d9;
     margin-top: 3px;
 }
 
-.previous-versions-list .title{
+.previous-versions-list .title {
     color: #fff;
 }
 
-.release-note-content pre{
+.release-note-content pre {
     margin-top: 5px;
     max-height: 100px;
     overflow: hidden;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     white-space: pre-wrap;
 }
 
-.release-note-content-expanded pre{
+.release-note-content-expanded pre {
     max-height: none;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.read-more-container{
+.read-more-container {
     margin-top: 3px;
     text-align: center;
     width: 100%;
@@ -145,111 +162,393 @@
 }
 
 
-.read-more{
+.read-more {
     font-size: 3vw;
     font-family: HelveticaNeue;
     color: #1A3352;
 }
 
+#hamburger-menu.container {
+    width: 0px;
+    height: 0px;
+    background-color: #E5E5E7;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#hamburger-menu.container-expanded {
+    width: 80%;
+    height: 100%;
+}
+
+.hamburger-header {
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.hamburger-header-title {
+    font-size: 5vw;
+    font-family: HelveticaNeue-Bold;
+    color: #1A3352;
+}
+
+.hamburger-menu-section-title {
+    font-size: 3vw;
+    margin-left: 5px;
+    font-family: HelveticaNeue-Medium;
+    color: #1A3352;
+}
+
+.hamburger-menu-list {
+    margin-top: 10px;
+}
+
+.hamburger-menu-list li {
+    border-bottom: 0.25vw solid #969FA9;
+}
+.hamburger-menu-list li:last-child {
+    border-bottom: none;
+}
+
+.hamburger-menu-item {
+    display: flex;
+    flex-direction: row;
+    min-height: 75px;
+    align-self: stretch;
+    background-color: #CDD6E0;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+}
+
+.hamburger-menu-item .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu-item .description-container {
+    flex: 4;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hamburger-menu-item .description-container .profile-name {
+    font-size: 3.5vw;
+    font-family: HelveticaNeue-Bold;
+    color: #1A3352;
+    white-space: nowrap;
+}
+
+.hamburger-menu-item .description-container .profile-description {
+    font-size: 3vw;
+    font-family: HelveticaNeue;
+    color: #1A3352;
+    white-space: nowrap;
+}
+
+.hamburger-menu-item .description-container .version-count {
+    font-size: 3vw;
+    font-family: HelveticaNeue-Bold;
+    color: #ADADAD;
+    white-space: nowrap;
+}
+
+.hamburger-menu-item .logintype-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.hamburger-menu-item .logintype-container .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #F5F6F9;
+    width: 40px;
+    height: 10vw;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+.hamburger-menu-item .logintype-container .wrapper .icon-passive {
+    color: #5B799E;
+    height: 3vw;
+}
+
+.hamburger-menu-item .logintype-container .wrapper .logintype-passive {
+    color: #5B799E;
+    font-size: 3vw;
+}
+
+.hamburger-menu-item .logintype-container .wrapper .logintype-active-title {
+    font-family: HelveticaNeue-Medium; text-align: center; font-size: 2.5vw; color: #FF8F34;
+}
+
+.hamburger-menu-item .logintype-container .wrapper .logintype-active {
+    font-family: HelveticaNeue-Bold; color: #FF8F34;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hamburger-app-icon {
+    width: 10vw;
+    height: 10vw;
+}
+
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+
     /* Küçük tabletler için stil */
-    .release-notes .download .create-date, .list-download-container .create-date{
+    .release-notes .download .create-date,
+    .list-download-container .create-date {
         /* font-size: 16px; */
         font-size: 0.75rem;
     }
-    .release-notes .download .app-name, .list-download-container .app-name{
+
+    .release-notes .download .app-name,
+    .list-download-container .app-name {
         /* font-size: 15px; */
         font-size: 0.75rem;
     }
-    .release-notes .download .app-version, .list-download-container .app-version{
+
+    .release-notes .download .app-version,
+    .list-download-container .app-version {
         /* font-size: 15px; */
         font-size: 0.75rem;
     }
-    .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
+
+    .release-notes .download .selected-sub,
+    .list-download-container .app-file-name,
+    .list-download-container .app-unique-name {
         font-size: 0.75rem;
     }
-    .release-notes .download .app-file-size, .list-download-container .app-file-size{
+
+    .release-notes .download .app-file-size,
+    .list-download-container .app-file-size {
         font-size: 0.75rem;
     }
-    .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
+
+    .release-notes .download .app-certificate-type,
+    .list-download-container .app-certificate-type {
         font-size: 0.75rem;
     }
-    .download-button-link{
+
+    .download-button-link {
         font-size: 0.65rem;
     }
-    .release-notes .notes .release-notes-title{
+
+    .release-notes .notes .release-notes-title {
         font-size: 1.2rem;
     }
-    .read-more{
+
+    .read-more {
         font-size: 1rem;
     }
+
+    .hamburger-menu-list li {
+        border-bottom: 0.15vw solid #969FA9;
+    }
+
+    .hamburger-menu-item .logintype-container .wrapper {
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .hamburger-app-icon {
+        width: 7vw;
+        height: 7vw;
+    }
+    
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-        /* Büyük tabletler için stil */
-        .release-notes .download .create-date, .list-download-container .create-date{
-            /* font-size: 16px; */
-            font-size: 0.75rem;
-        }
-        .release-notes .download .app-name, .list-download-container .app-name{
-            /* font-size: 15px; */
-            font-size: 0.75rem;
-        }
-        .release-notes .download .app-version, .list-download-container .app-version{
-            /* font-size: 15px; */
-            font-size: 0.75rem;
-        }
-        .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
-            font-size: 0.75rem;
-        }
-        .release-notes .download .app-file-size, .list-download-container .app-file-size{
-            font-size: 0.75rem;
-        }
-        .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
-            font-size: 0.75rem;
-        }
-        .download-button-link{
-            font-size: 0.65rem;
-        }
-        .release-notes .notes .release-notes-title{
-            font-size: 1.2rem;
-        }
-        .read-more{
-            font-size: 1rem;
-        }
+
+    /* Büyük tabletler için stil */
+    .release-notes .download .create-date,
+    .list-download-container .create-date {
+        /* font-size: 16px; */
+        font-size: 0.75rem;
+    }
+
+    .release-notes .download .app-name,
+    .list-download-container .app-name {
+        /* font-size: 15px; */
+        font-size: 0.75rem;
+    }
+
+    .release-notes .download .app-version,
+    .list-download-container .app-version {
+        /* font-size: 15px; */
+        font-size: 0.75rem;
+    }
+
+    .release-notes .download .selected-sub,
+    .list-download-container .app-file-name,
+    .list-download-container .app-unique-name {
+        font-size: 0.75rem;
+    }
+
+    .release-notes .download .app-file-size,
+    .list-download-container .app-file-size {
+        font-size: 0.75rem;
+    }
+
+    .release-notes .download .app-certificate-type,
+    .list-download-container .app-certificate-type {
+        font-size: 0.75rem;
+    }
+
+    .download-button-link {
+        font-size: 0.65rem;
+    }
+
+    .release-notes .notes .release-notes-title {
+        font-size: 1.2rem;
+    }
+
+    .read-more {
+        font-size: 1rem;
+    }
+
+    .hamburger-menu-list li {
+        border-bottom: 0.15vw solid #969FA9;
+    }
+
+    .hamburger-menu-item .logintype-container .wrapper {
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .hamburger-app-icon {
+        width: 8vw;
+        height: 8vw;
+    }
 }
 
 
 @media only screen and (min-width: 1025px) {
+
     /* Masaüstü ve büyük ekranlar için stil */
-    .release-notes .download .create-date, .list-download-container .create-date{
+    .release-notes .download .create-date,
+    .list-download-container .create-date {
         /* font-size: 16px; */
         font-size: 0.75rem;
     }
-    .release-notes .download .app-name, .list-download-container .app-name{
+
+    .release-notes .download .app-name,
+    .list-download-container .app-name {
         /* font-size: 15px; */
         font-size: 0.75rem;
     }
-    .release-notes .download .app-version, .list-download-container .app-version{
+
+    .release-notes .download .app-version,
+    .list-download-container .app-version {
         /* font-size: 15px; */
         font-size: 0.75rem;
     }
-    .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
+
+    .release-notes .download .selected-sub,
+    .list-download-container .app-file-name,
+    .list-download-container .app-unique-name {
         font-size: 0.75rem;
     }
-    .release-notes .download .app-file-size, .list-download-container .app-file-size{
+
+    .release-notes .download .app-file-size,
+    .list-download-container .app-file-size {
         font-size: 0.75rem;
     }
-    .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
+
+    .release-notes .download .app-certificate-type,
+    .list-download-container .app-certificate-type {
         font-size: 0.75rem;
     }
-    .download-button-link{
+
+    .download-button-link {
         font-size: 0.65rem;
     }
-    .release-notes .notes .release-notes-title{
+
+    .release-notes .notes .release-notes-title {
         font-size: 1.2rem;
     }
-    .read-more{
+
+    .read-more {
         font-size: 1rem;
+    }
+    .hamburger-menu-item .logintype-container .wrapper {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .hamburger-app-icon {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .hamburger-menu-list li {
+        border-bottom: 0.15vw solid #969FA9;
+    }
+
+    #hamburger-menu.container-expanded {
+        width: 45%;
+        height: 100%;
+    }
+
+    .hamburger-header-title {
+        font-size: 2vw;
+    }
+
+    .hamburger-menu-section-title {
+        font-size: 1vw;
+    }
+
+    .hamburger-menu-item .description-container .profile-name {
+        font-size: 2vw;
+    }
+    
+    .hamburger-menu-item .description-container .profile-description {
+        font-size: 1.5vw;
+    }
+    
+    .hamburger-menu-item .description-container .version-count {
+        font-size: 1.5vw;
+    }
+    .hamburger-menu-item .logintype-container .wrapper .logintype-passive {
+        font-size: 1.5vw;
+    }
+    .hamburger-menu-item .logintype-container .wrapper .icon-passive {
+        height: 2vw;
+    }
+    .hamburger-menu-item .logintype-container .wrapper .logintype-active-title {
+        font-family: HelveticaNeue-Medium; text-align: center; font-size: 1.5vw; color: #FF8F34;
+    }
+    
+    .hamburger-menu-item .logintype-container .wrapper .logintype-active {
+        font-family: HelveticaNeue-Bold; color: #FF8F34;
+    }
+
+}
+
+@media screen and (min-width: 45em) {
+    div.download-layout .page-summary {
+        justify-content: space-evenly;
+    }
+
+    div.download-layout .page-summary h1 {
+        text-align: center;
     }
 }
