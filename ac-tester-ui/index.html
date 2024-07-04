@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Dist Profile Name</title>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/css/all-old-ie.css">
+        <script>'article|section'.replace(/\w+/g, function(t) { document.createElement(t) })</script>
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/bundle.min.css">
+    <link rel="stylesheet" href="css/new.css ">
+   
+    <!--<![endif]-->
+</head>
+
+<body>
+    <div class="page">
+
+
+
+
+
+        <section class="primary fluid">
+            <div class="content-margins fluid">
+
+                <div class="download-layout">
+                    <div class="page-summary">
+
+
+                        <img class="hamburger-icon" src="./images/new_image_set/hamburger-icon.svg" alt="">
+
+
+                        <div class="header-container header">
+                            <h1>
+                                Distribution Profile Name - Test UI PORTAL VSVS
+                            </h1>
+                        </div>
+                        <img class="profile-icon" src="./images/new_image_set/profile-icon.svg" alt="">
+                    </div>
+
+
+                    <div class="release-notes" style="display: none" id="release-notes">
+                        <div class="download container">
+                            <div class="download-info">
+                                <img class="app-icon selected-app-icon" src="images/new_image_set/profile-icon.svg">
+
+                                <div class="version-info">
+                                    <small onclick="toggleDateTimeFormat(this)" id="create-date"
+                                        class="create-date"></small>
+                                    <span id="app-name" class="app-name"></span>
+                                    <span id="app-version" class="app-version"></span>
+                                    <span id="app-file-name" class="unique-name sub selected-sub"></span>
+                                    <span id="app-unique-name" class="unique-name sub selected-sub"></span>
+                                </div>
+                            </div>
+                            <div class="download-button-container">
+                                <a type="button" class="download-button-link" id="download-url">Download</a>
+                                <span class="app-file-size">150 MB</span>
+                                <span class="app-certificate-type">Enterprise</span>
+                            </div>
+
+                        </div>
+                        <div class="seperator"></div>
+                        <div class="notes">
+                            <span class="release-notes-title">Release Notes</span>
+                            <!-- <pre id="release-note"></pre> -->
+                             <div class="release-note-content" id="release-note"></div>
+                             <div onclick="toggleReadMore()" id="read-more" class="read-more-container">
+                                <span class="read-more">+ Read more</span>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="lists" style="padding: 0 !important" unsafe="">
+                        <div class="previous-versions-list">
+                            <span class="title">Versions</span>
+
+                            <div class="search-container">
+                                <form method="get" action="/Home/Profile">
+                                    <input type="hidden" id="profileId" name="profileId"
+                                        value="7116d7c7-5f3b-4b54-a3fc-55897faf396f">
+                                    <input type="hidden" id="appVersionId" name="appVersionId"
+                                        value="23fa315e-b451-4b56-b504-e522ce6262fe">
+                                    <input type="hidden" id="type" name="type" value="DistributionAppVersionTesting">
+                                    <input type="hidden" id="page" name="page" value="1">
+                                    <input type="hidden" id="size" name="size" value="20">
+
+
+                                    <input type="text" id="searchTerm" name="searchTerm" placeholder="Search Term">
+                                    <button title="Search" type="submit"></button>
+                                </form>
+
+                            </div>
+
+                            <ul id="app-version-list">
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+                                            </pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Web geliştirme, modern teknolojinin kalbinde yer alan dinamik bir alandır. Her gün yeni araçlar, çerçeveler ve diller ortaya çıkıyor. Bu gelişmeler, kullanıcı deneyimini iyileştirirken, geliştiricilerin işini kolaylaştırıyor.
+
+HTML, CSS ve JavaScript, web sayfalarının temel yapı taşlarıdır. Bu diller, birlikte kullanıldığında güçlü ve etkileşimli kullanıcı arayüzleri oluşturabilir. Web uygulamalarının temelini oluştururlar.
+                                            
+Sunucu tarafında ise, Node.js, Django ve Ruby on Rails gibi platformlar popülerdir. Bu teknolojiler, web uygulamalarının arka planında çalışan güçlü çözümler sunar. Veri tabanlarıyla entegre çalışarak, dinamik içerikler sunarlar.
+                                            
+Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri iletimi sağlar. Kullanıcı bilgilerini korumak, web uygulamaları için kritik bir unsurdur. Güvenlik açıklarını en aza indirmek için sürekli güncellemeler yapılmalıdır.</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                                <li class="app-item"
+                                    data-downloadurl="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K"
+                                    data-version="1.0.189" data-createdate="2024-06-28T06:36:21.8376542+00:00"
+                                    data-name="Appcircle Corporater User"
+                                    data-appiconurl="/home/appicon?appIconResourceId=5550b564-c691-4689-9511-d64aa5723a72&amp;email=anonymous@appcircle.io"
+                                    data-uniquename="com.appcircle.AppcircleCorporateUser"
+                                    data-filename="app-corporate-release-ac-signed.apk" data-platformtype="Android"
+                                    data-versioncode="189">
+                                    <div class="release-note" style="display: none; white-space: pre;">
+                                        <pre>Branch: feature/flavorDimension
+Commit Hash: da70c0f
+Commit Message: Update app name
+</pre>
+                                    </div>
+                                    <div class="list-download-container">
+                                        <div class="download-info">
+                                            <img class="app-icon" src="appicon" alt="">
+                                            <div class="version-info" id="version-info">
+                                                <small class="create-date" style="text-transform: none">2024.06.28 |
+                                                    Android</small>
+                                                <span class="app-name">Appcircle Corporater User</span>
+                                                <span class="app-version">1.0.189 (189)</span>
+                                                <span class="app-file-name">app-corporate-release-ac-signed.apk</span>
+                                                <span
+                                                    class="app-unique-name">com.appcircle.AppcircleCorporateUser</span>
+                                            </div>
+                                        </div>
+                                        <div class="download-button-container">
+                                            <a type="button" class="download-button-link"
+                                                href="https://dist.appcircle.io/profile/7116d7c7-5f3b-4b54-a3fc-55897faf396f/appVersions/23fa315e-b451-4b56-b504-e522ce6262fe/download/r3Agmb4vPda0xmgDQEXw-MjBp5jL5K">Download</a>
+                                            <span class="app-file-size">150 MB</span>
+                                            <span class="app-certificate-type">Enterprise</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="" class="register-device">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="pagination-lists">
+                        <div class="pagination pagination-container">
+                            <a
+                                href="/Home/Profile?ProfileId=7116d7c7-5f3b-4b54-a3fc-55897faf396f&amp;AppVersionId=23fa315e-b451-4b56-b504-e522ce6262fe&amp;searchTerm=&amp;size=20&amp;page=1&amp;type=10">«</a>
+                            <a class="active" href="#">1</a>
+                            <a
+                                href="/Home/Profile?ProfileId=7116d7c7-5f3b-4b54-a3fc-55897faf396f&amp;AppVersionId=23fa315e-b451-4b56-b504-e522ce6262fe&amp;searchTerm=&amp;size=20&amp;page=2&amp;type=10">2</a>
+                            <a
+                                href="/Home/Profile?ProfileId=7116d7c7-5f3b-4b54-a3fc-55897faf396f&amp;AppVersionId=23fa315e-b451-4b56-b504-e522ce6262fe&amp;searchTerm=&amp;size=20&amp;page=3&amp;type=10">3</a>
+                            <a
+                                href="/Home/Profile?ProfileId=7116d7c7-5f3b-4b54-a3fc-55897faf396f&amp;AppVersionId=23fa315e-b451-4b56-b504-e522ce6262fe&amp;searchTerm=&amp;size=20&amp;page=3&amp;type=10">»</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <input type="hidden" value="anonymous@appcircle.io">
+    </div>
+    <script type="text/javascript" nonce="">
+        function timeDifference(e, a) { var o = e - a; return o < 6e4 ? Math.round(o / 1e3) + " seconds ago" : o < 36e5 ? Math.round(o / 6e4) + " minutes ago" : o < 864e5 ? Math.round(o / 36e5) + " hours ago" : o < 2592e6 ? Math.round(o / 864e5) + " days ago" : o < 31536e6 ? Math.round(o / 2592e6) + " months ago" : Math.round(o / 31536e6) + " years ago" }
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" nonce="">
+
+        var oldEl = null;
+        function toggleDateTimeFormat(el) {
+            console.log('Toggle datetime format', el);
+        }
+
+        function toggleReadMore(){
+            const targetNode = document.getElementById('release-note');
+            const readMoreButton = document.getElementById('read-more');
+
+            $(targetNode).addClass('release-note-content-expanded');
+            readMoreButton.hidden = true;
+        }
+        function appVersionSelect(el, downloadUrl, appVersion, createDate, iconUrl, name, uniqueName, fileName, platformType, versionCode) {
+            window.scroll({
+                top:0,
+                left:0,
+                behavior:'smooth'
+            });
+            var releaseNoteEl = document.getElementById("release-note"),
+                createDateEl = document.getElementById("create-date"),
+                appNameEl = document.getElementById("app-name"),
+                appVersionEl = document.getElementById("app-version"),
+                downloadUrlEl = document.getElementById("download-url"),
+                releaseNotesDiv = document.getElementById("release-notes"),
+                appVersionUniqueNameEl = document.getElementById("app-unique-name"),
+                appIconEl = document.getElementsByClassName("selected-app-icon"),
+                appFileName = document.getElementById("app-file-name");
+
+            releaseNoteEl.innerHTML = $(el).find(".release-note").html();
+            createDateEl.innerText = window.timeDifference(new Date(), new Date(createDate,));
+            $("#register-device-url").href = $(".register-device").html();
+            $(releaseNoteEl).removeClass('release-note-content-expanded');
+            appNameEl.innerText = name + " | " + platformType;
+            appVersionEl.innerText = appVersion + ' (' + versionCode + ')';
+            downloadUrlEl.href = downloadUrl;
+            appVersionUniqueNameEl.innerText = uniqueName;
+            appFileName.innerText = fileName;
+
+            for (var e in appIconEl) {
+                appIconEl[e].src = iconUrl;
+            }
+
+            appIconEl.src = iconUrl;
+
+            releaseNotesDiv.style.display = "block";
+
+            var versionList = document.getElementById("app-version-list");
+            for (var i = 0; i < versionList.children.length; i++) {
+                versionList.children[i].classList.remove("latest-version");
+            }
+            $(el).addClass("latest-version");
+
+            let item = $(".app-version-detail", $el);
+
+            if ((oldEl !== undefined) && (oldEl !== null)) {
+                // console.log(oldEl);
+                let oldItem = $(".app-version-detail", $(oldEl));
+                $(oldItem).hide();
+                $(oldEl).height(52);
+            }
+
+            oldEl = el;
+            $(oldEl).height(80);
+            $(item).show();
+        }
+
+        $(document).ready(function () {
+
+            $("#app-version-list:first").trigger("click");
+
+            $("body").on("click", "#app-version-list li", function (e) {
+                const $el = $(this);
+                //appVersionSelect($el, $el.attr("data-downloadurl"),$el.attr("data-version"), $el.attr("data-createdate"), $el.attr("data-appiconurl"), $el.attr("data-name"), $el.attr("data-uniquename"), $el.attr("data-filename"), $el.attr("data-platformtype"), $el.attr("data-versioncode"),)
+                appVersionSelect($el, $el.attr("data-downloadurl"), $el.attr("data-version"), $el.attr("data-createdate"), "file:///Users/burakyildirim/Documents/actesterui/appicon", $el.attr("data-name"), $el.attr("data-uniquename"), $el.attr("data-filename"), $el.attr("data-platformtype"), $el.attr("data-versioncode"),)
+            });
+
+
+        });
+    </script>
+
+    <script nonce="">
+        $(document).ready(function () {
+
+            $("#app-version-list li:first").trigger("click");
+
+
+        });
+
+    </script>
+
+<script>
+    const targetNode = document.getElementById('release-note');
+  
+    const config = { childList: true, subtree: true, characterData: true };
+  
+    const callback = function(mutationsList, observer) {
+      for(const mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+          const targetNode = document.getElementById('release-note');
+          const readMoreButton = document.getElementById('read-more');
+
+          const preDefinedMaxHeight = 100;
+          readMoreButton.hidden = !(targetNode.offsetHeight >= preDefinedMaxHeight);
+        }
+      }
+    };
+  
+    const observer = new MutationObserver(callback);
+    observer.observe(targetNode, config);
+  </script>
+
+
+</body>
+
+</html>

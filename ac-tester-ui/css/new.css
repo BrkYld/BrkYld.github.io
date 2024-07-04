@@ -1,0 +1,252 @@
+.page-summary{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.profile-icon{
+    width: 30px;
+    height: 30px;
+}
+.hamburger-icon{
+    width: 30px;
+    height: 20px;
+}
+
+.release-notes .download .create-date, .list-download-container .create-date{
+    /* font-size: 16px; */
+    font-size: 3vw;
+}
+
+.release-notes .download .app-name, .list-download-container .app-name{
+    /* font-size: 15px; */
+    font-size: 3vw;
+    font-weight:bold;
+    color: #1A3352;
+}
+
+.release-notes .download .app-version, .list-download-container .app-version{
+    /* font-size: 15px; */
+    font-size: 3vw;
+    font-weight:normal;
+    color: #1A3352;
+    margin-top: 2px;
+}
+
+.release-notes .container, .list-download-container{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    border-bottom: 0px;
+}
+
+.app-icon {
+    height: 40px;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+}
+
+.release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
+    font-size: 3vw;
+    font-weight:normal;
+    text-overflow:ellipsis;
+    font-family: HelveticaNeue;
+    color: #1A3352;
+}
+
+.download-info{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    /* background-color: red; */
+}
+
+.download-button-container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    align-self: flex-start;
+}
+
+.download-button-link{
+    height: 25px;
+    align-self: stretch;
+    margin: 5px;
+    margin-bottom: 2px;
+    background-color: #ff8f34;
+    border-radius: 5px;
+    font-family: HelveticaNeue-Bold;
+    color: #fff;
+    font-size: 2.5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.release-notes .download .app-file-size, .list-download-container .app-file-size{
+    font-size: 3vw;
+    text-align: right;
+    margin-right: 5px;
+    color: #b2c3d9;
+    font-family: HelveticaNeue;
+}
+
+.release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
+    font-size: 3vw;
+    text-align: right;
+    margin-right: 5px;
+    color: #b2c3d9;
+    font-family: HelveticaNeue;
+}
+
+.release-notes .notes{
+   padding: 8px;
+   margin: 0px;
+}
+.release-notes .notes .release-notes-title{
+    font-size: 3.5vw;
+ }
+.pagination-lists .pagination-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.seperator{
+    width: 100%;
+    height: 1px;
+    background-color: #b2c3d9;
+    margin-top: 3px;
+}
+
+.previous-versions-list .title{
+    color: #fff;
+}
+
+.release-note-content pre{
+    margin-top: 5px;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: pre-wrap;
+}
+
+.release-note-content-expanded pre{
+    max-height: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-more-container{
+    margin-top: 3px;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
+
+
+.read-more{
+    font-size: 3vw;
+    font-family: HelveticaNeue;
+    color: #1A3352;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* Küçük tabletler için stil */
+    .release-notes .download .create-date, .list-download-container .create-date{
+        /* font-size: 16px; */
+        font-size: 0.75rem;
+    }
+    .release-notes .download .app-name, .list-download-container .app-name{
+        /* font-size: 15px; */
+        font-size: 0.75rem;
+    }
+    .release-notes .download .app-version, .list-download-container .app-version{
+        /* font-size: 15px; */
+        font-size: 0.75rem;
+    }
+    .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
+        font-size: 0.75rem;
+    }
+    .release-notes .download .app-file-size, .list-download-container .app-file-size{
+        font-size: 0.75rem;
+    }
+    .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
+        font-size: 0.75rem;
+    }
+    .download-button-link{
+        font-size: 0.65rem;
+    }
+    .release-notes .notes .release-notes-title{
+        font-size: 1.2rem;
+    }
+    .read-more{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+        /* Büyük tabletler için stil */
+        .release-notes .download .create-date, .list-download-container .create-date{
+            /* font-size: 16px; */
+            font-size: 1rem;
+        }
+        .release-notes .download .app-name, .list-download-container .app-name{
+            /* font-size: 15px; */
+            font-size: 1rem;
+        }
+        .release-notes .download .app-version, .list-download-container .app-version{
+            /* font-size: 15px; */
+            font-size: 1rem;
+        }
+        .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
+            font-size: 1rem;
+        }
+        .release-notes .download .app-file-size, .list-download-container .app-file-size{
+            font-size: 1rem;
+        }
+        .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
+            font-size: 1rem;
+        }
+        .download-button-link{
+            font-size: 0.65rem;
+        }
+        .release-notes .notes .release-notes-title{
+            font-size: 1.2rem;
+        }
+        .read-more{
+            font-size: 1rem;
+        }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    /* Masaüstü ve büyük ekranlar için stil */
+    .release-notes .download .create-date, .list-download-container .create-date{
+        /* font-size: 16px; */
+        font-size: 1rem;
+    }
+    .release-notes .download .app-name, .list-download-container .app-name{
+        /* font-size: 15px; */
+        font-size: 1rem;
+    }
+    .release-notes .download .app-version, .list-download-container .app-version{
+        /* font-size: 15px; */
+        font-size: 1rem;
+    }
+    .release-notes .download .selected-sub, .list-download-container .app-file-name,.list-download-container .app-unique-name{
+        font-size: 1rem;
+    }
+    .release-notes .download .app-file-size, .list-download-container .app-file-size{
+        font-size: 1rem;
+    }
+    .release-notes .download .app-certificate-type, .list-download-container .app-certificate-type{
+        font-size: 1rem;
+    }
+    .download-button-link{
+        font-size: 0.65rem;
+    }
+    .release-notes .notes .release-notes-title{
+        font-size: 1.2rem;
+     }
+}

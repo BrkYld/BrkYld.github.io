@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #a5b5c9;
+}
+
+.header_label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    font: 1.15rem HelveticaNeue-Bold;
+    color: #354a63;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.content_dropdowns {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.content_dropdowns_select {
+    position: relative;
+}
+
+.content_dropdowns_select {
+    display: block;
+    width: 100%;
+    background-color: var(--ac-theme-color-secondary-xx-light);
+    padding-left: 1rem;
+    background-clip: padding-box;
+    border: 1px solid var(--ac-theme-color-secondary-x-light);
+    border-radius: 0.3125rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-shadow: 0 1px 0 0 rgba(91, 121, 158, 0.1);
+    font-family: HelveticaNeue-Bold, Arial, Helvetica, sans-serif;
+    font-size: 0.9375rem;
+    background-color: var(--ac-theme-color-secondary-x-light);
+    height: 2.5rem;
+    cursor: pointer;
+    appearance: none;
+}
+
+.content_dropdowns #versions {
+    margin-left: 15px;
+}
+
+.content_frame {
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.content_frame iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 850px;
+    border: none;
+}
+
+.SelectBox {
+    position: relative;
+    width: 240px;
+}
+.SelectBox > select {
+    display: block;
+    width: 100%;
+    background-color: #f5f6f9;
+    padding-left: 1rem;
+    background-clip: padding-box;
+    border: 1px solid #f5f6f9;
+    border-radius: 0.3125rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-shadow: 0 1px 0 0 rgba(91, 121, 158, 0.1);
+    font-family: HelveticaNeue-Bold, Arial, Helvetica, sans-serif;
+    font-size: 0.9375rem;
+    background-color: #f5f6f9;
+    height: 2.5rem;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.SelectBoxTriangleIcon {
+    position: absolute;
+    right: 1rem;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border: solid 4px;
+    border-color: #a5b5c9 transparent transparent transparent;
+    pointer-events: none;
+}
