@@ -39,7 +39,8 @@
                             </h1>
                         </div>
                         <div class="profile">
-                            <img id="profile-icon" onclick="toggleProfileMenu()" class="profile-icon" src="./images/new_image_set/profile-icon.svg" alt="">
+                            <img id="profile-icon" onclick="toggleProfileMenu()" class="profile-icon"
+                                src="./images/new_image_set/profile-icon.svg" alt="">
                             <div id="profile-menu" class="container hidden">
                                 <div class="arrow">
                                     <div class="arrow-up"></div>
@@ -77,7 +78,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -991,19 +992,27 @@ Commit Message: Update app name
             $(hamburgerMenu).addClass('container-expanded');
             document.body.style.overflow = 'hidden';
         }
-        
-        function toggleProfileMenu(){
+
+        function toggleProfileMenu() {
+            event.stopPropagation();
             const profileMenu = document.getElementById('profile-menu');
-            $(profileMenu).removeClass('hidden');
+            if ($(profileMenu).hasClass('hidden')) {
+                $(profileMenu).removeClass('hidden');
+            } else {
+                $(profileMenu).addClass('hidden');
+                document.body.onclick = null;
+            }
             document.body.onclick = function (event) {
                 const profileMenu = document.getElementById('profile-menu');
-                if (!profileMenu.contains(event.target) && event.target.id != 'profile-icon') {
+                if (!profileMenu.contains(event.target) || event.target.id !== 'profile-icon') {
                     $(profileMenu).addClass('hidden');
                     document.body.onclick = null;
-                } else {
+                }
+                else {
                     console.log('You clicked inside the hamburgerMenu!');
                 }
             }
+
         }
         function toggleReadMore() {
             const targetNode = document.getElementById('release-note');
@@ -1016,8 +1025,8 @@ Commit Message: Update app name
             window.scroll({
                 top: 0,
                 left: 0,
-                behavior:"smooth"
-            });   
+                behavior: "smooth"
+            });
             var releaseNoteEl = document.getElementById("release-note"),
                 createDateEl = document.getElementById("create-date"),
                 appNameEl = document.getElementById("app-name"),
