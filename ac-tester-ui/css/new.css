@@ -223,6 +223,7 @@
 .hamburger-menu-list li {
     border-bottom: 0.25vw solid #969FA9;
 }
+
 .hamburger-menu-list li:last-child {
     border-bottom: none;
 }
@@ -248,8 +249,9 @@
 
 .hamburger-menu-item .description-container {
     flex: 4;
+    display: flex;
     flex-direction: column;
-    text-overflow: ellipsis;
+    justify-content: space-evenly;
     overflow: hidden;
 }
 
@@ -258,6 +260,8 @@
     font-family: HelveticaNeue-Bold;
     color: #1A3352;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .hamburger-menu-item .description-container .profile-description {
@@ -265,6 +269,8 @@
     font-family: HelveticaNeue;
     color: #1A3352;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .hamburger-menu-item .description-container .version-count {
@@ -272,6 +278,8 @@
     font-family: HelveticaNeue-Bold;
     color: #ADADAD;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .hamburger-menu-item .logintype-container {
@@ -305,11 +313,15 @@
 }
 
 .hamburger-menu-item .logintype-container .wrapper .logintype-active-title {
-    font-family: HelveticaNeue-Medium; text-align: center; font-size: 2.5vw; color: #FF8F34;
+    font-family: HelveticaNeue-Medium;
+    text-align: center;
+    font-size: 2.5vw;
+    color: #FF8F34;
 }
 
 .hamburger-menu-item .logintype-container .wrapper .logintype-active {
-    font-family: HelveticaNeue-Bold; color: #FF8F34;
+    font-family: HelveticaNeue-Bold;
+    color: #FF8F34;
 }
 
 .hidden {
@@ -383,7 +395,7 @@
         width: 7vw;
         height: 7vw;
     }
-    
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -499,27 +511,28 @@
     .read-more {
         font-size: 1rem;
     }
+
     .hamburger-menu-item .logintype-container .wrapper {
-        height: 5vw;
-        width: 5vw;
+        height: 3vw;
+        width: 3vw;
     }
 
     .hamburger-app-icon {
-        width: 5vw;
-        height: 5vw;
+        width: 3vw;
+        height: 3vw;
     }
 
     .hamburger-menu-list li {
-        border-bottom: 0.15vw solid #969FA9;
+        border-bottom: 0.5px solid #969FA9;
     }
 
     #hamburger-menu.container-expanded {
-        width: 45%;
+        width: 30%;
         height: 100%;
     }
 
     .hamburger-header-title {
-        font-size: 2vw;
+        font-size: 1vw;
     }
 
     .hamburger-menu-section-title {
@@ -527,28 +540,36 @@
     }
 
     .hamburger-menu-item .description-container .profile-name {
-        font-size: 2vw;
+        font-size: 1vw;
     }
-    
+
     .hamburger-menu-item .description-container .profile-description {
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
-    
+
     .hamburger-menu-item .description-container .version-count {
-        font-size: 1.5vw;
+        font-size: 0.75vw;
     }
+
     .hamburger-menu-item .logintype-container .wrapper .logintype-passive {
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
+
     .hamburger-menu-item .logintype-container .wrapper .icon-passive {
-        height: 2vw;
+        height: 1vw;
     }
+
     .hamburger-menu-item .logintype-container .wrapper .logintype-active-title {
-        font-family: HelveticaNeue-Medium; text-align: center; font-size: 1.5vw; color: #FF8F34;
+        font-family: HelveticaNeue-Medium;
+        text-align: center;
+        font-size: 0.8vw;
+        color: #FF8F34;
     }
-    
+
     .hamburger-menu-item .logintype-container .wrapper .logintype-active {
-        font-family: HelveticaNeue-Bold; color: #FF8F34;
+        font-family: HelveticaNeue-Bold;
+        color: #FF8F34;
+        font-size: 1vw;
     }
 
 }
