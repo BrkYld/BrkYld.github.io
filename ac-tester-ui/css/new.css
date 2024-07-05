@@ -337,7 +337,7 @@
     position: absolute;
     background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 250px;
     z-index: 1;
     right: 0;
 }
@@ -354,7 +354,7 @@
     flex-direction: column;
     background-color: #E5E5E7;
     width: 300px;
-    height: 190px;
+    height: 240px;
     right: 0;
     border-radius: 6px;
 }
@@ -367,7 +367,7 @@
 
 .profile .logout {
     display: flex;
-    flex: 1;
+    flex: 2;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -375,7 +375,13 @@
 }
 
 .profile .logout .email-text {
-    font-family: HelveticaNeue-Medium;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    color: #1A3352;
+}
+
+.profile .logout .publisher-text {
+    font-family: HelveticaNeue-Bold;
     font-size: 16px;
     color: #1A3352;
 }
@@ -450,6 +456,42 @@
     border-right: 7px solid transparent;
     border-bottom: 10px solid #E5E5E7;
 
+}
+
+.guideline-modal {
+    display: flex; flex-direction: column; position:absolute; width: 80%; height: 60%; background-color: #2F4662; top:20%; left: 10%; padding: 10px; border: 1px solid #A5B5C9;
+}
+
+.guideline-modal .title-container {
+    display:flex;flex:1; justify-content: flex-start; align-items: center;
+}
+
+.guideline-modal .title-container .title {
+    font-size: 4vw;color: #D8D8D8; font-family: HelveticaNeue;
+}
+
+.guideline-modal .content-container {
+    flex:4; padding: 10px;
+}
+
+.guideline-modal .content-container li {
+    margin-top:8px; font-size: 4vw;color: #D8D8D8; font-family: HelveticaNeue; line-height: 1.5em;
+}
+
+.guideline-modal .content-container li:first-child {
+    margin-top: 0px;
+}
+
+.guideline-modal .button-container {
+    display: flex; flex:1; justify-content: center; align-items: center;
+}
+
+.guideline-modal .button-container .button {
+    width: 75%; height: 60%; background-color: #FF8F34; border-radius: 6px; display: flex; justify-content: center; align-items: center;
+}
+
+.guideline-modal .button-container .button span {
+    color: white; font-family:HelveticaNeue-Medium; font-size: 4vw;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -689,6 +731,18 @@
         font-family: HelveticaNeue-Bold;
         color: #FF8F34;
         font-size: 1vw;
+    }
+
+    .guideline-modal .title-container .title {
+        font-size: 2vw;color: #D8D8D8; font-family: HelveticaNeue;
+    }
+
+    .guideline-modal .content-container li {
+        margin-top:8px; font-size: 2vw;color: #D8D8D8; font-family: HelveticaNeue; line-height: 1.5em;
+    }
+
+    .guideline-modal .button-container .button span {
+        color: white; font-family:HelveticaNeue-Medium; font-size: 2vw;
     }
 
 }

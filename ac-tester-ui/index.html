@@ -48,6 +48,7 @@
                                 <div class="wrapper">
                                     <div class="detail-container">
                                         <div class="logout">
+                                            <span class="publisher-text">Ziraat Teknoloji</span>
                                             <span class="email-text">sophie@appcircle.io</span>
                                             <div class="logout-button-wrapper">
                                                 <img src="./images/new_image_set/logout-icon.svg" alt="">
@@ -58,10 +59,6 @@
                                             <div>
                                                 <span class="title">Login Method:</span>
                                                 <span class="description">Static Login</span>
-                                            </div>
-                                            <div>
-                                                <span class="title">Publisher:</span>
-                                                <span class="description">Ziraat Teknoloji</span>
                                             </div>
                                             <div>
                                                 <span class="title">Contact:</span>
@@ -99,7 +96,7 @@
                                 </div>
                             </div>
                             <div class="download-button-container">
-                                <a type="button" class="download-button-link" id="download-url">Download</a>
+                                <div onclick="showInstallGuide()" type="button" class="download-button-link" id="download-url">Download</div>
                                 <span class="app-file-size">150 MB</span>
                                 <span class="app-certificate-type">Enterprise</span>
                             </div>
@@ -956,6 +953,25 @@ Commit Message: Update app name
             </div>
         </div>
 
+        <div class="guideline-modal hidden" id="guideline-modal">
+            <div class="title-container">
+                <span class="title">Download the app and then confirm.</span>
+            </div>
+            <div class="content-container">
+                <ul>
+                    <li>1. Open the app and tap “Cancel” on the “Untrusted Enterprise Developer” notification.</li>
+                    <li>2. Go to Settings, then navigate to General > Device Management.</li>
+                    <li>3. Under Enterprise App, tap the name of your organization.</li>
+                    <li>4. Tap “Trust [Your Organization Name]” and confirm by tapping “Trust” again.</li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <div onclick="hideInstallGuide()" class="button">
+                    <span>Proceed</span>
+                </div>
+            </div>
+        </div>
+
         <input type="hidden" value="anonymous@appcircle.io">
     </div>
     <script type="text/javascript" nonce="">
@@ -991,6 +1007,32 @@ Commit Message: Update app name
             $(hamburgerMenu).removeClass('container-collapsed');
             $(hamburgerMenu).addClass('container-expanded');
             document.body.style.overflow = 'hidden';
+        }
+
+        function hideInstallGuide(){
+            const installGuide = document.getElementById('guideline-modal');
+            const page = document.getElementById('page-main-section');
+            $(page).removeClass('blur');
+            $(installGuide).addClass('hidden');
+            document.body.onclick = null;
+            document.body.style.overflow = 'auto';
+        }
+        function showInstallGuide(){
+            event.stopPropagation();
+            const installGuide = document.getElementById('guideline-modal');
+            const page = document.getElementById('page-main-section');
+            $(page).addClass('blur');
+            $(installGuide).removeClass('hidden');
+            document.body.style.overflow = 'hidden';
+            document.body.onclick = function (event) {
+                const installGuide = document.getElementById('guideline-modal');
+                if (!installGuide.contains(event.target)) {
+                  hideInstallGuide();
+                }
+                else {
+                    console.log('You clicked inside the hamburgerMenu!');
+                }
+            }
         }
 
         function toggleProfileMenu() {
