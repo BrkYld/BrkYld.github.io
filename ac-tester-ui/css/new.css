@@ -333,6 +333,125 @@
     height: 10vw;
 }
 
+.profile .container {
+    position: absolute;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+    right: 0;
+}
+
+.profile .arrow {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6px;
+}
+
+.profile .wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E7;
+    width: 300px;
+    height: 190px;
+    right: 0;
+    border-radius: 6px;
+}
+
+.profile .detail-container {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .logout {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px
+}
+
+.profile .logout .email-text {
+    font-family: HelveticaNeue-Medium;
+    font-size: 16px;
+    color: #1A3352;
+}
+
+.profile .logout .logout-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px
+}
+
+.profile .logout .logout-button-wrapper img {
+    color: #DA4444;
+    width: 15px;
+    height: 15px;
+}
+
+.profile .logout .logout-button-wrapper span {
+    color: #DA4444;
+    font-family: HelveticaNeue-Medium;
+    margin-top: 3px;
+}
+
+.profile .contact-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.profile .contact-info div {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.profile .contact-info .title {
+    font-family: HelveticaNeue-Light;
+    color: #1A3352;
+}
+
+.profile .contact-info .description {
+    font-family: HelveticaNeue-Medium;
+    color: #1A3352;
+    margin-top: 2px;
+}
+
+.profile .terms-container {
+    display: flex;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #98A1AB;
+}
+
+.profile .terms-container a,
+.profile .terms-container span {
+    color: #1A3352;
+    font-family: HelveticaNeue;
+}
+
+.arrow-up {
+    position: relative;
+    width: 0;
+    right: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #E5E5E7;
+
+}
+
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
     /* Küçük tabletler için stil */
@@ -576,10 +695,16 @@
 
 @media screen and (min-width: 45em) {
     div.download-layout .page-summary {
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     div.download-layout .page-summary h1 {
         text-align: center;
+    }
+
+    .profile .container {
+        right: 1em;
     }
 }

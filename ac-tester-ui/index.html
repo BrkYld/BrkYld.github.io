@@ -38,7 +38,48 @@
                                 Distribution Profile Name
                             </h1>
                         </div>
-                        <img class="profile-icon" src="./images/new_image_set/profile-icon.svg" alt="">
+                        <div class="profile">
+                            <img id="profile-icon" onclick="toggleProfileMenu()" class="profile-icon" src="./images/new_image_set/profile-icon.svg" alt="">
+                            <div id="profile-menu" class="container hidden">
+                                <div class="arrow">
+                                    <div class="arrow-up"></div>
+                                </div>
+                                <div class="wrapper">
+                                    <div class="detail-container">
+                                        <div class="logout">
+                                            <span class="email-text">sophie@appcircle.io</span>
+                                            <div class="logout-button-wrapper">
+                                                <img src="./images/new_image_set/logout-icon.svg" alt="">
+                                                <span>Log out</span>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info">
+                                            <div>
+                                                <span class="title">Login Method:</span>
+                                                <span class="description">Static Login</span>
+                                            </div>
+                                            <div>
+                                                <span class="title">Publisher:</span>
+                                                <span class="description">Ziraat Teknoloji</span>
+                                            </div>
+                                            <div>
+                                                <span class="title">Contact:</span>
+                                                <span class="description">osman@appcircle.io</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="terms-container">
+                                        <a>Terms</a>
+                                        <span>|</span>
+                                        <a>Privacy Policy</a>
+                                        <span>|</span>
+                                        <a>Help</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
                     </div>
 
 
@@ -950,6 +991,20 @@ Commit Message: Update app name
             $(hamburgerMenu).addClass('container-expanded');
             document.body.style.overflow = 'hidden';
         }
+        
+        function toggleProfileMenu(){
+            const profileMenu = document.getElementById('profile-menu');
+            $(profileMenu).removeClass('hidden');
+            document.body.onclick = function (event) {
+                const profileMenu = document.getElementById('profile-menu');
+                if (!profileMenu.contains(event.target) && event.target.id != 'profile-icon') {
+                    $(profileMenu).addClass('hidden');
+                    document.body.onclick = null;
+                } else {
+                    console.log('You clicked inside the hamburgerMenu!');
+                }
+            }
+        }
         function toggleReadMore() {
             const targetNode = document.getElementById('release-note');
             const readMoreButton = document.getElementById('read-more');
@@ -958,20 +1013,11 @@ Commit Message: Update app name
             readMoreButton.hidden = true;
         }
         function appVersionSelect(el, downloadUrl, appVersion, createDate, iconUrl, name, uniqueName, fileName, platformType, versionCode) {
-            // window.scroll({
-            //     top: 0,
-            //     left: 0,
-            //     behavior:"smooth"
-            // });
-            
-            // document.documentElement.scrollTop veya window.scrollY değeri 0 olana kadar kaydırma
-            let scrollInterval = setInterval(() => {
-                if (document.documentElement.scrollTop !== 0) {
-                    window.scrollBy(0, -50); // 50 piksel yukarı kaydır
-                } else {
-                    clearInterval(scrollInterval); // Kaydırmayı durdur
-                }
-            }, 16); // 16ms (yaklaşık 60fps)
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior:"smooth"
+            });   
             var releaseNoteEl = document.getElementById("release-note"),
                 createDateEl = document.getElementById("create-date"),
                 appNameEl = document.getElementById("app-name"),
