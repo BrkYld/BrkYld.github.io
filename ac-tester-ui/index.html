@@ -838,7 +838,8 @@ Commit Message: Update app name
                                 </div>
                                 <div class="description-container">
                                     <span class="profile-name">App Profile 5</span>
-                                    <span class="profile-description">Distribution Profile Description Distribution Profile Description Distribution Profile Description</span>
+                                    <span class="profile-description">Distribution Profile Description Distribution
+                                        Profile Description Distribution Profile Description</span>
                                     <span class="version-count">44 shared versions</span>
                                 </div>
                                 <div class="logintype-container">
@@ -855,22 +856,23 @@ Commit Message: Update app name
                 <section id="hamburger-menu-other-profiles">
                     <span class="hamburger-menu-section-title">Other Shared Profiles</span>
                     <ul class="hamburger-menu-list">
-                        <li class="hamburger-menu-list-item">                            <div class="hamburger-menu-item">
-                            <div class="image-container">
-                                <img class="app-icon hamburger-app-icon" src="appicon">
-                            </div>
-                            <div class="description-container">
-                                <span class="profile-name">App profile 1</span>
-                                <span class="profile-description">Distribution Profile Description</span>
-                                <span class="version-count">44 shared versions</span>
-                            </div>
-                            <div class="logintype-container">
-                                <div class="wrapper" style="border: 1px solid #FF8F34;">
-                                    <span class="logintype-passive logintype-active-title">Login with</span>
-                                    <span class="logintype-passive logintype-active">SSO</span>
+                        <li class="hamburger-menu-list-item">
+                            <div class="hamburger-menu-item">
+                                <div class="image-container">
+                                    <img class="app-icon hamburger-app-icon" src="appicon">
+                                </div>
+                                <div class="description-container">
+                                    <span class="profile-name">App profile 1</span>
+                                    <span class="profile-description">Distribution Profile Description</span>
+                                    <span class="version-count">44 shared versions</span>
+                                </div>
+                                <div class="logintype-container">
+                                    <div class="wrapper" style="border: 1px solid #FF8F34;">
+                                        <span class="logintype-passive logintype-active-title">Login with</span>
+                                        <span class="logintype-passive logintype-active">SSO</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </li>
                         <li class="hamburger-menu-list-item">
                             <div class="hamburger-menu-item">
@@ -956,11 +958,20 @@ Commit Message: Update app name
             readMoreButton.hidden = true;
         }
         function appVersionSelect(el, downloadUrl, appVersion, createDate, iconUrl, name, uniqueName, fileName, platformType, versionCode) {
-            window.scroll({
-                top: 0,
-                left: 0,
-                behavior:"smooth"
-            });
+            // window.scroll({
+            //     top: 0,
+            //     left: 0,
+            //     behavior:"smooth"
+            // });
+            
+            // document.documentElement.scrollTop veya window.scrollY değeri 0 olana kadar kaydırma
+            let scrollInterval = setInterval(() => {
+                if (document.documentElement.scrollTop !== 0) {
+                    window.scrollBy(0, -50); // 50 piksel yukarı kaydır
+                } else {
+                    clearInterval(scrollInterval); // Kaydırmayı durdur
+                }
+            }, 16); // 16ms (yaklaşık 60fps)
             var releaseNoteEl = document.getElementById("release-note"),
                 createDateEl = document.getElementById("create-date"),
                 appNameEl = document.getElementById("app-name"),
