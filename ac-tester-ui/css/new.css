@@ -12,31 +12,40 @@
     width: 30px;
     height: 20px;
 }
-
+.previous-versions-list ul li{
+    background-color: #fff;
+}
+.previous-versions-list ul li.latest-version{
+    background-color: #c9d0d8;
+}
 .blur {
     opacity: 0.3;
     pointer-events: none;
 }
-
+.release-notes{
+    background-color: #c9d0d8;
+}
 .release-notes .download .create-date,
 .list-download-container .create-date {
     /* font-size: 16px; */
     font-size: 3vw;
+    color: #1A3352;
+    font-weight: bold;
 }
 
 .release-notes .download .app-name,
 .list-download-container .app-name {
     /* font-size: 15px; */
     font-size: 3vw;
-    font-weight: bold;
     color: #1A3352;
+    font-family: HelveticaNeue;
 }
 
 .release-notes .download .app-version,
 .list-download-container .app-version {
     /* font-size: 15px; */
     font-size: 3vw;
-    font-weight: normal;
+    font-family: HelveticaNeue-Bold;
     color: #1A3352;
     margin-top: 2px;
 }
@@ -79,6 +88,9 @@
     height: 100%;
     align-self: flex-start;
 }
+.download-button-container .download-icon {
+    height: 25px; align-self: flex-end;
+}
 
 .download-button-link {
     height: 25px;
@@ -97,23 +109,71 @@
     text-decoration: none;
 }
 
-.release-notes .download .app-file-size,
+.download-button-link-new {
+    height: 25px;
+    align-self: stretch;
+    margin: 5px;
+    margin-bottom: 2px;
+    background-color: #ff8f34;
+    border-radius: 5px;
+    font-family: HelveticaNeue-Bold;
+    color: #fff;
+    font-size: 3vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.release-notes .download .app-file-size {
+    font-size: 3vw;
+    text-align: right;
+    margin-right: 5px;
+    color: #1A3352;
+    font-family: HelveticaNeue;
+}
 .list-download-container .app-file-size {
     font-size: 3vw;
     text-align: right;
     margin-right: 5px;
-    color: #b2c3d9;
-    font-family: HelveticaNeue;
+    color: #1A3352;
+    font-family: HelveticaNeue-Light;
 }
 
-.release-notes .download .app-certificate-type,
+.list-download-container .app-file-size-new {
+    font-size: 2.5vw;
+    text-align: right;
+    margin-top: 1px;
+    margin-right: 0px;
+    color: #1A3352;
+    font-family: HelveticaNeue-Light;
+}
+
+.release-notes .download .app-certificate-type {
+    font-size: 3vw;
+    text-align: right;
+    margin-right: 5px;
+    color: #1A3352;
+    font-family: HelveticaNeue-Light;
+}
+
+.list-download-container .app-certificate-type-new {
+    font-size: 2.5vw;
+    text-align: right;
+    margin-right: 0px;
+    color: #1A3352;
+    font-family: HelveticaNeue-Light;
+}
+
 .list-download-container .app-certificate-type {
     font-size: 3vw;
     text-align: right;
     margin-right: 5px;
-    color: #b2c3d9;
-    font-family: HelveticaNeue;
+    color: #1A3352;
+    font-family: HelveticaNeue-Light;
 }
+
 
 .release-notes .notes {
     padding: 8px;
@@ -384,6 +444,7 @@
     font-family: HelveticaNeue-Bold;
     font-size: 16px;
     color: #1A3352;
+    text-align: center;
 }
 
 .profile .logout .logout-button-wrapper {
@@ -521,12 +582,18 @@
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-file-size,
+    .release-notes .download .app-file-size{
+        font-size: 0.75rem;
+    }
+
     .list-download-container .app-file-size {
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-certificate-type,
+    .release-notes .download .app-certificate-type {
+        font-size: 0.75rem;
+    }
+
     .list-download-container .app-certificate-type {
         font-size: 0.75rem;
     }
@@ -586,12 +653,18 @@
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-file-size,
+    .release-notes .download .app-file-size{
+        font-size: 0.75rem;
+    }
+
     .list-download-container .app-file-size {
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-certificate-type,
+    .release-notes .download .app-certificate-type{
+        font-size: 0.75rem;
+    }
+
     .list-download-container .app-certificate-type {
         font-size: 0.75rem;
     }
@@ -651,12 +724,17 @@
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-file-size,
+    .release-notes .download .app-file-size{
+        font-size: 0.75rem;
+    }
+
     .list-download-container .app-file-size {
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-certificate-type,
+    .release-notes .download .app-certificate-type {
+        font-size: 0.75rem;
+    }
     .list-download-container .app-certificate-type {
         font-size: 0.75rem;
     }
