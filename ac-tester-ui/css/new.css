@@ -92,6 +92,23 @@
     height: 25px; align-self: flex-end;
 }
 
+.download-button-container .download-icon-link {
+    height: 25px;
+    width: 25px;
+    align-self: flex-end;
+
+    border: 1px solid #ff8f34;
+    border-radius: 3px;
+    font-family: HelveticaNeue-Bold;
+    color: #ff8f34;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .download-button-link {
     height: 25px;
     align-self: stretch;
