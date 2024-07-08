@@ -937,8 +937,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
         function openHamburgerMenu() {
             const hamburgerMenu = document.getElementById('hamburger-menu');
             const page = document.getElementById('page-main-section');
-            const list = document.getElementById('hamburger-menu-list');
-            list.style.height = (window.innerHeight) * 0.60 + 'px';
             document.body.onclick = function (event) {
                 const hamburgerMenu = document.getElementById('hamburger-menu');
                 if (!hamburgerMenu.contains(event.target) && event.target.id != 'hamburger-icon') {
