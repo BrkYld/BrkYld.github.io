@@ -935,6 +935,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             console.log('Toggle datetime format', el);
         }
         function openHamburgerMenu() {
+            document.exitFullscreen();
             const hamburgerMenu = document.getElementById('hamburger-menu');
             const page = document.getElementById('page-main-section');
             document.body.onclick = function (event) {
@@ -957,7 +958,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).addClass('container-expanded');
             hamburgerMenu.style.height = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
-            hamburgerMenu.style.overflow = 'hidden';
         }
 
         function hideInstallGuide() {
