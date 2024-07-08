@@ -34,7 +34,7 @@
 
 
                         <div class="header-container header">
-                            <h1>
+                            <h1 style="color: #fff; font-family: HelveticaNeue-Bold; font-size: 20px; text-align: center; text-overflow: ellipsis;">
                                 Distribution Profile Name
                             </h1>
                         </div>
@@ -49,7 +49,8 @@
                                     <div class="detail-container">
                                         <div class="logout">
                                             <span class="publisher-text">Ziraat Teknoloji Appcircle Limited
-                                                Company</span>
+                                                Company
+                                            </span>
                                             <span class="email-text">sophie@appcircle.io</span>
                                             <div class="logout-button-wrapper">
                                                 <img src="./images/new_image_set/logout-icon.svg" alt="">
@@ -57,7 +58,7 @@
                                             </div>
                                         </div>
                                         <div class="contact-info">
-                                            <div>
+                                            <div style="margin-top: 20px;">
                                                 <span class="title">Login Method:</span>
                                                 <span class="description">Static Login</span>
                                             </div>
@@ -72,7 +73,7 @@
                                         <span>|</span>
                                         <a>Privacy Policy</a>
                                         <span>|</span>
-                                        <a>Help</a>
+                                        <div onclick="showHelpModal()" id="profile-help">Help</div>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +132,7 @@
 
 
                                     <input type="text" id="searchTerm" name="searchTerm" placeholder="Search version">
-                                    <button title="Search" type="submit"></button>
+                                    <!-- <button title="Search" type="submit"></button> -->
                                 </form>
 
                             </div>
@@ -679,7 +680,24 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                 </div>
             </div>
         </div>
-
+        <div class="help-modal hidden" id="help-modal">
+            <div class="title-container">
+                <span class="title">Help Modal</span>
+            </div>
+            <div class="content-container">
+                <ul>
+                    <li>1. Open the app and tap “Cancel” on the “Untrusted Enterprise Developer” notification.</li>
+                    <li>2. Go to Settings, then navigate to General > Device Management.</li>
+                    <li>3. Under Enterprise App, tap the name of your organization.</li>
+                    <li>4. Tap “Trust [Your Organization Name]” and confirm by tapping “Trust” again.</li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <div onclick="hideHelpModal()" class="button">
+                    <span>Close</span>
+                </div>
+            </div>
+        </div>
         <input type="hidden" value="anonymous@appcircle.io">
     </div>
     <script type="text/javascript" nonce="">
@@ -768,8 +786,36 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             }
         }
 
+        function showHelpModal(){
+            event.stopPropagation();
+            const helpModal = document.getElementById('help-modal');
+            const page = document.getElementById('page-main-section');
+            $(page).addClass('blur');
+            $(helpModal).removeClass('hidden');
+            document.body.style.overflow = 'hidden';
+            document.body.onclick = function (event) {
+                const helpModal = document.getElementById('help-modal');
+                if (!helpModal.contains(event.target)) {
+                    hideHelpModal();
+                }
+                else {
+                    console.log('You clicked inside the hamburgerMenu!');
+                }
+            }
+        }
+
+        function hideHelpModal() {
+            const helpModal = document.getElementById('help-modal');
+            const page = document.getElementById('page-main-section');
+            $(page).removeClass('blur');
+            $(helpModal).addClass('hidden');
+            document.body.onclick = null;
+            document.body.style.overflow = 'auto';
+        }
+
         function toggleProfileMenu() {
             event.stopPropagation();
+            const page = document.getElementById('page-main-section');
             const profileMenu = document.getElementById('profile-menu');
             if ($(profileMenu).hasClass('hidden')) {
                 $(profileMenu).removeClass('hidden');
