@@ -12,24 +12,19 @@
     width: 30px;
     height: 20px;
 }
-
-.previous-versions-list ul li {
+.previous-versions-list ul li{
     background-color: #fff;
 }
-
-.previous-versions-list ul li.latest-version {
+.previous-versions-list ul li.latest-version{
     background-color: #c9d0d8;
 }
-
 .blur {
     opacity: 0.3;
     pointer-events: none;
 }
-
-.release-notes {
+.release-notes{
     background-color: #c9d0d8;
 }
-
 .release-notes .download .create-date,
 .list-download-container .create-date {
     /* font-size: 16px; */
@@ -93,15 +88,8 @@
     height: 100%;
     align-self: flex-start;
 }
-
 .download-button-container .download-icon {
-    height: 25px;
-    align-self: flex-end;
-    color: #ff8f34;
-}
-
-.search-container {
-    margin-top: 15px;
+    height: 25px; align-self: flex-end;
 }
 
 .download-button-container .download-icon-link {
@@ -162,7 +150,6 @@
     color: #1A3352;
     font-family: HelveticaNeue-Light;
 }
-
 .list-download-container .app-file-size {
     font-size: 3vw;
     text-align: right;
@@ -273,13 +260,10 @@
 
 #hamburger-menu.container-expanded {
     width: 80%;
-    /* height: 100%; */
+    height: 100%;
     left: 0;
     transition: left 0.5s;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    /* background-color: #E5E5E7; */
-    background-color: #fff;
-    overflow-y: auto;
+    background-color: #E5E5E7;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -326,7 +310,7 @@
     flex-direction: row;
     min-height: 75px;
     align-self: stretch;
-    background-color: #c9d0d8;
+    background-color: #CDD6E0;
     padding: 10px;
     padding-left: 0px;
     padding-right: 0px;
@@ -389,7 +373,7 @@
     align-items: center;
     flex: 1;
     background-color: #F5F6F9;
-    width: 60px;
+    width: 40px;
     height: 10vw;
     border-radius: 8px;
     flex-direction: column;
@@ -430,7 +414,7 @@
     position: absolute;
     background-color: transparent;
     width: 300px;
-    height: 270px;
+    height: 250px;
     z-index: 1;
     right: 0;
 }
@@ -447,7 +431,7 @@
     flex-direction: column;
     background-color: #E5E5E7;
     width: 300px;
-    height: 260px;
+    height: 240px;
     right: 0;
     border-radius: 6px;
 }
@@ -527,8 +511,8 @@
 .profile .terms-container {
     display: flex;
     flex: 1;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -536,7 +520,7 @@
 }
 
 .profile .terms-container a,
-.profile .terms-container span, .profile .terms-container div {
+.profile .terms-container span {
     color: #1A3352;
     font-family: HelveticaNeue;
 }
@@ -553,42 +537,23 @@
 }
 
 .guideline-modal {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 80%;
-    height: 60%;
-    background-color: #2F4662;
-    top: 20%;
-    left: 10%;
-    padding: 10px;
-    border: 1px solid #A5B5C9;
+    display: flex; flex-direction: column; position:absolute; width: 80%; height: 60%; background-color: #2F4662; top:20%; left: 10%; padding: 10px; border: 1px solid #A5B5C9;
 }
 
 .guideline-modal .title-container {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-    align-items: center;
+    display:flex;flex:1; justify-content: flex-start; align-items: center;
 }
 
 .guideline-modal .title-container .title {
-    font-size: 4vw;
-    color: #D8D8D8;
-    font-family: HelveticaNeue;
+    font-size: 4vw;color: #D8D8D8; font-family: HelveticaNeue;
 }
 
 .guideline-modal .content-container {
-    flex: 4;
-    padding: 10px;
+    flex:4; padding: 10px;
 }
 
 .guideline-modal .content-container li {
-    margin-top: 8px;
-    font-size: 4vw;
-    color: #D8D8D8;
-    font-family: HelveticaNeue;
-    line-height: 1.5em;
+    margin-top:8px; font-size: 4vw;color: #D8D8D8; font-family: HelveticaNeue; line-height: 1.5em;
 }
 
 .guideline-modal .content-container li:first-child {
@@ -596,94 +561,17 @@
 }
 
 .guideline-modal .button-container {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+    display: flex; flex:1; justify-content: center; align-items: center;
 }
 
 .guideline-modal .button-container .button {
-    width: 75%;
-    height: 60%;
-    background-color: #FF8F34;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 75%; height: 60%; background-color: #FF8F34; border-radius: 6px; display: flex; justify-content: center; align-items: center;
 }
 
 .guideline-modal .button-container .button span {
-    color: white;
-    font-family: HelveticaNeue-Medium;
-    font-size: 4vw;
+    color: white; font-family:HelveticaNeue-Medium; font-size: 4vw;
 }
 
-
-.help-modal {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    background-color: #2F4662;
-    top: 5%;
-    left: 5%;
-    padding: 10px;
-    border: 1px solid #A5B5C9;
-}
-
-.help-modal .title-container {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.help-modal .title-container .title {
-    font-size: 4vw;
-    color: #D8D8D8;
-    font-family: HelveticaNeue;
-}
-
-.help-modal .content-container {
-    flex: 4;
-    padding: 10px;
-}
-
-.help-modal .content-container li {
-    margin-top: 8px;
-    font-size: 4vw;
-    color: #D8D8D8;
-    font-family: HelveticaNeue;
-    line-height: 1.5em;
-}
-
-.help-modal .content-container li:first-child {
-    margin-top: 0px;
-}
-
-.help-modal .button-container {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.help-modal .button-container .button {
-    width: 75%;
-    height: 40%;
-    background-color: #FF8F34;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.help-modal .button-container .button span {
-    color: white;
-    font-family: HelveticaNeue-Medium;
-    font-size: 4vw;
-}
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
     /* Küçük tabletler için stil */
@@ -711,7 +599,7 @@
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-file-size {
+    .release-notes .download .app-file-size{
         font-size: 0.75rem;
     }
 
@@ -782,7 +670,7 @@
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-file-size {
+    .release-notes .download .app-file-size{
         font-size: 0.75rem;
     }
 
@@ -790,7 +678,7 @@
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-certificate-type {
+    .release-notes .download .app-certificate-type{
         font-size: 0.75rem;
     }
 
@@ -853,7 +741,7 @@
         font-size: 0.75rem;
     }
 
-    .release-notes .download .app-file-size {
+    .release-notes .download .app-file-size{
         font-size: 0.75rem;
     }
 
@@ -864,7 +752,6 @@
     .release-notes .download .app-certificate-type {
         font-size: 0.75rem;
     }
-
     .list-download-container .app-certificate-type {
         font-size: 0.75rem;
     }
@@ -942,23 +829,15 @@
     }
 
     .guideline-modal .title-container .title {
-        font-size: 2vw;
-        color: #D8D8D8;
-        font-family: HelveticaNeue;
+        font-size: 2vw;color: #D8D8D8; font-family: HelveticaNeue;
     }
 
     .guideline-modal .content-container li {
-        margin-top: 8px;
-        font-size: 2vw;
-        color: #D8D8D8;
-        font-family: HelveticaNeue;
-        line-height: 1.5em;
+        margin-top:8px; font-size: 2vw;color: #D8D8D8; font-family: HelveticaNeue; line-height: 1.5em;
     }
 
     .guideline-modal .button-container .button span {
-        color: white;
-        font-family: HelveticaNeue-Medium;
-        font-size: 2vw;
+        color: white; font-family:HelveticaNeue-Medium; font-size: 2vw;
     }
 
 }
