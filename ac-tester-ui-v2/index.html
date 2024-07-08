@@ -25,7 +25,7 @@
         <section id="page-main-section" class="primary fluid">
             <div class="content-margins fluid">
 
-                <div class="download-layout">
+                <div id="download-layout" class="download-layout">
                     <div class="page-summary">
 
 
@@ -945,6 +945,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                     $(hamburgerMenu).addClass('container-collapsed');
                     $(hamburgerMenu).addClass('hidden');
                     document.body.style.overflow = 'auto';
+                    page.style.pointerEvents = 'auto';
                     document.body.onclick = null;
                 } else {
                     console.log('You clicked inside the hamburgerMenu!');
@@ -957,6 +958,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).addClass('container-expanded');
             hamburgerMenu.style.height = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
+            page.style.pointerEvents = 'none';
         }
 
         function hideInstallGuide() {
@@ -1042,16 +1044,11 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             readMoreButton.hidden = true;
         }
         function appVersionSelect(el, downloadUrl, appVersion, createDate, iconUrl, name, uniqueName, fileName, platformType, versionCode) {
-            // window.scroll({
-            //     top: 0,
-            //     left: 0,
-            //     behavior: "smooth"
-            // });
-            window.scrollTo({
-                top:0,
+            window.scroll({
+                top: 0,
                 left: 0,
-                behavior :'smooth'
-            })
+                behavior: "smooth"
+            });
             var releaseNoteEl = document.getElementById("release-note"),
                 createDateEl = document.getElementById("create-date"),
                 appNameEl = document.getElementById("app-name"),
