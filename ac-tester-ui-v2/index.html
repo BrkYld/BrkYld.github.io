@@ -905,8 +905,8 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
     <script src="js/jquery.min.js"></script>
 
     <script type="text/javascript" nonce="">
-        var oldEl = null;
-
+        var oldEl = null;   
+        const WINDOW_INNER_HEIGHT = window.innerHeight;
         function getOverflowedText(element) {
             const tempSpan = document.createElement('span');
             tempSpan.style.visibility = 'hidden';
@@ -955,7 +955,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).removeClass('hidden');
             $(hamburgerMenu).removeClass('container-collapsed');
             $(hamburgerMenu).addClass('container-expanded');
-            hamburgerMenu.style.height = (window.innerHeight) + 'px';
+            hamburgerMenu.style.height = (WINDOW_INNER_HEIGHT) + 'px';
             document.body.style.overflow = 'hidden';
         }
 
