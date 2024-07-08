@@ -264,7 +264,7 @@
     background-color: #E5E5E7;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -80%;
     z-index: 1;
@@ -276,11 +276,13 @@
     /* height: 100%; */
     left: 0;
     transition: left 0.5s;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     /* background-color: #E5E5E7; */
     background-color: #fff;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
     transition: left 0.5s;

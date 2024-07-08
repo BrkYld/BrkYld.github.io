@@ -945,7 +945,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                     $(hamburgerMenu).addClass('container-collapsed');
                     $(hamburgerMenu).addClass('hidden');
                     document.body.style.overflow = 'auto';
-                    page.style.pointerEvents = 'auto';
                     document.body.onclick = null;
                 } else {
                     console.log('You clicked inside the hamburgerMenu!');
@@ -958,7 +957,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).addClass('container-expanded');
             hamburgerMenu.style.height = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
-            page.style.pointerEvents = 'none';
         }
 
         function hideInstallGuide() {
