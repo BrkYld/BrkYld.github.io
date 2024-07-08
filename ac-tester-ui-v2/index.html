@@ -956,6 +956,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).removeClass('container-collapsed');
             $(hamburgerMenu).addClass('container-expanded');
             hamburgerMenu.style.height = (WINDOW_INNER_HEIGHT) + 'px';
+            document.body.style.maxHeight = (WINDOW_INNER_HEIGHT) + 'px';
             document.body.style.overflow = 'hidden';
         }
 
