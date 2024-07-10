@@ -925,29 +925,13 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                     $(hamburgerMenu).addClass('hidden');
                     document.body.style.overflow = 'auto';
                     document.body.onclick = null;
+                    page.style.overflow = null;
+                    page.style.position = null;
+                    page.style.top = null;
+                    page.style.left = null;
+                    page.style.maxHeight = null;
                 } else {
                     console.log('You clicked inside the hamburgerMenu!');
-                }
-            }
-
-            document.body.ontouchmove =  function (event) {
-                
-                const hamburgerMenu = document.getElementById('hamburger-menu');
-                if (!hamburgerMenu.contains(event.target)) {
-                    console.log('inside ontouchmove', event);
-                    event.preventDefault();
-                    event.stopPropagation();
-                    return false;
-                }
-            }
-            document.body.onscroll =  function (event) {
-               
-                const hamburgerMenu = document.getElementById('hamburger-menu');
-                if (!hamburgerMenu.contains(event.target)) {
-                    console.log('INSIDE SCROLL', event);
-                    event.preventDefault();
-                    event.stopPropagation();
-                    return false;
                 }
             }
             $(page).addClass('blur');
@@ -957,7 +941,11 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
 
             hamburgerMenu.style.height = (window.innerHeight) + 'px';
             //document.body.style.maxHeight = (window.innerHeight) + 'px';
-            document.body.style.overflow = 'hidden';
+            page.style.overflow = 'hidden';
+            page.style.position ='absolute';
+            page.style.top = 0;
+            page.style.left = 0;
+            page.style.maxHeight = (window.innerHeight) + 'px';
         }
 
         function handleResize() {
