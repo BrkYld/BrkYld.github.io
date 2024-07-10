@@ -928,6 +928,10 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             console.log('Toggle datetime format', el);
         }
         function openHamburgerMenu() {
+            window.scroll({
+                top: 0,
+                left: 0
+            });
             const hamburgerMenu = document.getElementById('hamburger-menu');
             const page = document.getElementById('page-main-section');
             document.body.onclick = function (event) {
@@ -952,10 +956,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             hamburgerMenu.style.height = (window.innerHeight + window.pageYOffset) + 'px';
             //document.body.style.maxHeight = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
-            window.scroll({
-                top: 0,
-                left: 0
-            });
             console.log('window.pageYOffset => ', window.pageYOffset);
             console.log('window.scrollY => ', window.scrollY);
             alert('window.pageYOffset => ' + window.pageYOffset);
