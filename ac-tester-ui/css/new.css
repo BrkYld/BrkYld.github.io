@@ -551,7 +551,7 @@
     padding: 10px;
 }
 
-.guideline-modal .content-container li {
+.guideline-modal .content-container span {
     margin-top: 8px;
     font-size: 4vw;
     color: #D8D8D8;
@@ -729,11 +729,13 @@
         font-size: 1rem;
     }
 
-
-    .guideline-modal .content-container li {
+    .guideline-modal .content-container span {
+        margin-top: 8px;
         font-size: 1rem;
+        color: #D8D8D8;
+        font-family: HelveticaNeue;
+        line-height: 1.5em;
     }
-
     .guideline-modal .content-container li:first-child {
         margin-top: 0px;
     }
@@ -1086,7 +1088,7 @@
         font-family: HelveticaNeue;
     }
 
-    .guideline-modal .content-container li {
+    .guideline-modal .content-container span {
         margin-top: 8px;
         font-size: 2vw;
         color: #D8D8D8;
