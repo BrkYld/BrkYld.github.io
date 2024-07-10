@@ -953,15 +953,18 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).removeClass('container-collapsed');
             $(hamburgerMenu).addClass('container-expanded');
 
-            hamburgerMenu.style.height = (window.innerHeight + window.pageYOffset) + 'px';
+            hamburgerMenu.style.height = (window.innerHeight) + 'px';
             //document.body.style.maxHeight = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
-            console.log('window.pageYOffset => ', window.pageYOffset);
-            console.log('window.scrollY => ', window.scrollY);
-            alert('window.pageYOffset => ' + window.pageYOffset);
-            alert('window.scrollY => ' + window.scrollY);
         }
 
+        function handleResize() {
+            var currentHeight = window.innerHeight;
+            document.getElementById('hamburger-menu').style.height = currentHeight + 'px';
+        }
+
+
+        window.addEventListener('resize', handleResize);
         function hideInstallGuide() {
             const installGuide = document.getElementById('guideline-modal');
             const page = document.getElementById('page-main-section');
