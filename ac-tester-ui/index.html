@@ -860,30 +860,22 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                 <span class="title">Download the app and then confirm.</span>
             </div>
             <div class="content-container">
-                <div>
-                    <span class="guideline-modal-text">
-1. Open the app and tap “Cancel” on the “Untrusted Enterprise Developer”
-notification. <br>
-2. Go to Settings, then navigate to General > Device Management. <br>
-3. Under Enterprise App, tap the name of your organization. <br>
-4 .Tap “Trust [Your Organization Name]” and confirm by tapping “Trust”
-again.
-                    </span>
-                </div>
-                <!-- <div>
-                    <span class="guideline-modal-text">2. Go to Settings, then navigate to General > Device Management.</span>
-                    <br>
-                </div>
-                <div>
-                    <span class="guideline-modal-text  option-3">3. Under Enterprise App, tap the name of your organization.</span>
-                    <br>
-                </div>
-                <div>
-                    <span class="guideline-modal-text  option-4">4 .Tap “Trust [Your Organization Name]” and confirm by tapping “Trust”
-                        again.</span>
-                    <br>
-                </div> -->
-
+                <ul id="guideline-content">
+                    <li class="guideline-modal-text">
+                        1. Open the app and tap “Cancel” on the “Untrusted Enterprise Developer”
+                        notification.
+                    </li>
+                    <li class="guideline-modal-text">
+                        2. Go to Settings, then navigate to General > Device Management.
+                    </li>
+                    <li class="guideline-modal-text">
+                        3. Under Enterprise App, tap the name of your organization.
+                    </li>
+                    <li class="guideline-modal-text">
+                        4 .Tap “Trust [Your Organization Name]” and confirm by tapping “Trust”
+                        again.
+                    </li>
+                </ul>
             </div>
             <div class="button-container">
                 <div onclick="hideInstallGuide()" class="button">
@@ -988,10 +980,15 @@ again.
         function showInstallGuide() {
             event.stopPropagation();
             const installGuide = document.getElementById('guideline-modal');
+            const content = document.getElementById('guideline-content');
             const page = document.getElementById('page-main-section');
             $(page).addClass('blur');
             $(installGuide).removeClass('hidden');
             document.body.style.overflow = 'hidden';
+            const newEl = document.createElement('li');
+            newEl.innerText = "5. For Testing";
+            newEl.className = "guideline-modal-text"
+            content.appendChild(newEl)
             document.body.onclick = function (event) {
                 const installGuide = document.getElementById('guideline-modal');
                 if (!installGuide.contains(event.target)) {
