@@ -857,7 +857,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
 
         <div class="guideline-modal hidden" id="guideline-modal">
             <div class="title-container">
-                <span class="title">Download the app and then confirm.</span>
+                <span id="guideline-title" class="title">Download the app and then confirm.</span>
             </div>
             <div class="content-container">
                 <ul id="guideline-content">
@@ -984,12 +984,12 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             const page = document.getElementById('page-main-section');
             $(page).addClass('blur');
             $(installGuide).removeClass('hidden');
+            const title = document.getElementById('guideline-title');
+            const titleStyle = window.getComputedStyle(title);
             document.body.style.overflow = 'hidden';
             content.querySelectorAll('li').forEach(item => {
-                const style = window.getComputedStyle(item);
-                const fontSize = style.getPropertyValue('font-size');
-                console.log('FONT SIZE => ', fontSize);
-                item.style.fontSize = fontSize;
+                console.log('FONT SIZE => ', titleStyle.fontSize);
+                item.style.fontSize = titleStyle.fontSize;
             });
             document.body.onclick = function (event) {
                 const installGuide = document.getElementById('guideline-modal');
