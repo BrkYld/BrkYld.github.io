@@ -726,16 +726,12 @@
 
 
     .guideline-modal .title-container .title {
-        font-size: 2vw;
+        font-size: 1rem;
     }
 
 
     .guideline-modal .content-container li {
-        margin-top: 8px;
-        font-size: 2vw;
-        color: #D8D8D8;
-        font-family: HelveticaNeue;
-        line-height: 1.5em;
+        font-size: 1rem;
     }
 
     .guideline-modal .content-container li:first-child {
