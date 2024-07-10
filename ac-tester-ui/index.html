@@ -900,32 +900,14 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
     <script type="text/javascript" nonce="">
         var oldEl = null;
         const WINDOW_INNER_HEIGHT = window.innerHeight;
-        function getOverflowedText(element) {
-            const tempSpan = document.createElement('span');
-            tempSpan.style.visibility = 'hidden';
-            tempSpan.style.whiteSpace = 'nowrap';
-            tempSpan.textContent = element.textContent;
-            document.body.appendChild(tempSpan);
-
-            const isOverflowing = tempSpan.offsetWidth > element.offsetWidth;
-            document.body.removeChild(tempSpan);
-
-            if (!isOverflowing) {
-                return null; // No overflow
-            }
-
-            // Calculate the visible portion
-            const containerWidth = element.offsetWidth;
-            const text = element.textContent;
-            const maxVisibleCharacters = Math.floor(containerWidth / (tempSpan.offsetWidth / text.length));
-
-            const visibleText = text.slice(0, maxVisibleCharacters);
-            const overflowedText = text.slice(maxVisibleCharacters);
-
-            return overflowedText;
-        }
         function toggleDateTimeFormat(el) {
             console.log('Toggle datetime format', el);
+        }
+
+        function preventScroll(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
         }
         function openHamburgerMenu() {
             window.scroll({
@@ -956,6 +938,9 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             hamburgerMenu.style.height = (window.innerHeight) + 'px';
             //document.body.style.maxHeight = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
+            page.addEventListener('scroll', preventScroll, { passive: false });
+            page.addEventListener('touchmove', preventScroll, { passive: false });
+            page.addEventListener('whell', preventScroll, { passive: false });
         }
 
         function handleResize() {
