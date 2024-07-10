@@ -981,18 +981,10 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
         function showInstallGuide() {
             event.stopPropagation();
             const installGuide = document.getElementById('guideline-modal');
-            const content = document.getElementById('guideline-content');
             const page = document.getElementById('page-main-section');
             $(page).addClass('blur');
             $(installGuide).removeClass('hidden');
-            const title = document.getElementById('guideline-title');
-            const titleStyle = window.getComputedStyle(title);
             document.body.style.overflow = 'hidden';
-            content.querySelectorAll('li').forEach(item => {
-
-                //item.style.fontSize = "10px"
-               
-            });
             document.body.onclick = function (event) {
                 const installGuide = document.getElementById('guideline-modal');
                 if (!installGuide.contains(event.target)) {
