@@ -950,13 +950,16 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).addClass('container-expanded');
 
             hamburgerMenu.style.height = (window.innerHeight + window.pageYOffset) + 'px';
-            document.body.style.maxHeight = (window.innerHeight) + 'px';
+            //document.body.style.maxHeight = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
             window.scroll({
                 top: 0,
                 left: 0
             });
             console.log('window.pageYOffset => ', window.pageYOffset);
+            console.log('window.scrollY => ', window.scrollY);
+            alert('window.pageYOffset => ' + window.pageYOffset);
+            alert('window.scrollY => ' + window.scrollY);
         }
 
         function hideInstallGuide() {
