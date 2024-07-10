@@ -910,10 +910,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             return false;
         }
         function openHamburgerMenu() {
-            window.scroll({
-                top: 0,
-                left: 0
-            });
             const hamburgerMenu = document.getElementById('hamburger-menu');
             const page = document.getElementById('page-main-section');
             document.body.onclick = function (event) {
@@ -929,7 +925,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                     page.style.position = null;
                     page.style.top = null;
                     page.style.left = null;
-                    page.style.maxHeight = null;
+                    page.style.height = null;
                 } else {
                     console.log('You clicked inside the hamburgerMenu!');
                 }
@@ -945,7 +941,11 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             page.style.position ='absolute';
             page.style.top = 0;
             page.style.left = 0;
-            page.style.maxHeight = (window.innerHeight) + 'px';
+            page.style.height = (window.innerHeight) + 'px';
+            window.scroll({
+                top: 0,
+                left: 0
+            });
         }
 
         function handleResize() {
