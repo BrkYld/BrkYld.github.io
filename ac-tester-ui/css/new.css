@@ -731,12 +731,12 @@
   
     .guideline-modal-text {
         margin-top: 8px;
-        font-size: 1rem;
+        font-size: 1rem !important;
         color: #D8D8D8;
         font-family: HelveticaNeue;
         line-height: 1.5em;
     }
-    
+
     .guideline-modal .content-container li:first-child {
         margin-top: 0px;
     }
