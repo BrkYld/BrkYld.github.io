@@ -724,14 +724,26 @@
         font-size: 1.5vw;
     }
 
+    .guideline-modal {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        background-color: #2F4662;
+        top: 20%;
+        left: 10%;
+        padding: 10px;
+        border: 1px solid #A5B5C9;
+    }
 
     .guideline-modal .title-container .title {
-        font-size: 1rem;
+        font-size: 1.5vw;
     }
   
     .guideline-modal-text {
         margin-top: 8px;
-        font-size: 1rem !important;
+        font-size: 1.5vw !important;
         color: #D8D8D8;
         font-family: HelveticaNeue;
         line-height: 1.5em;
