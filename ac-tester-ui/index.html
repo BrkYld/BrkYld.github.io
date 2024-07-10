@@ -70,9 +70,11 @@
                                         </div>
                                     </div>
                                     <div class="terms-container">
-                                        <a style="text-decoration: none;" target="_blank" href="https://appcircle.io/">Terms</a>
+                                        <a style="text-decoration: none;" target="_blank"
+                                            href="https://appcircle.io/">Terms</a>
                                         <span>|</span>
-                                        <a style="text-decoration: none;" target="_blank" href="https://appcircle.io/">Privacy Policy</a>
+                                        <a style="text-decoration: none;" target="_blank"
+                                            href="https://appcircle.io/">Privacy Policy</a>
                                         <span>|</span>
                                         <div onclick="showHelpModal()" id="profile-help">Help</div>
                                     </div>
@@ -899,6 +901,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
 
     <script type="text/javascript" nonce="">
         var oldEl = null;
+
         const WINDOW_INNER_HEIGHT = window.innerHeight;
         function toggleDateTimeFormat(el) {
             console.log('Toggle datetime format', el);
@@ -935,10 +938,9 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).removeClass('container-collapsed');
             $(hamburgerMenu).addClass('container-expanded');
 
-           
-            //document.body.style.maxHeight = (window.innerHeight) + 'px';
+
             page.style.overflow = 'hidden';
-            page.style.position ='absolute';
+            page.style.position = 'absolute';
             page.style.top = 0;
             page.style.left = 0;
             page.style.height = (window.innerHeight) + 'px';
