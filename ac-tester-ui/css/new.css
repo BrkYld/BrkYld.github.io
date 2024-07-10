@@ -130,23 +130,6 @@
     border-radius: 5px;
     font-family: HelveticaNeue-Bold;
     color: #fff;
-    font-size: 2.5vw;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.download-button-link-new {
-    height: 25px;
-    align-self: stretch;
-    margin: 5px;
-    margin-bottom: 2px;
-    background-color: #ff8f34;
-    border-radius: 5px;
-    font-family: HelveticaNeue-Bold;
-    color: #fff;
     font-size: 3vw;
     text-align: center;
     display: flex;
@@ -164,14 +147,6 @@
 }
 
 .list-download-container .app-file-size {
-    font-size: 3vw;
-    text-align: right;
-    margin-right: 5px;
-    color: #1A3352;
-    font-family: HelveticaNeue-Light;
-}
-
-.list-download-container .app-file-size-new {
     font-size: 2.5vw;
     text-align: right;
     margin-top: 1px;
@@ -188,18 +163,10 @@
     font-family: HelveticaNeue-Light;
 }
 
-.list-download-container .app-certificate-type-new {
+.list-download-container .app-certificate-type {
     font-size: 2.5vw;
     text-align: right;
     margin-right: 0px;
-    color: #1A3352;
-    font-family: HelveticaNeue-Light;
-}
-
-.list-download-container .app-certificate-type {
-    font-size: 3vw;
-    text-align: right;
-    margin-right: 5px;
     color: #1A3352;
     font-family: HelveticaNeue-Light;
 }
@@ -684,6 +651,14 @@
     font-family: HelveticaNeue-Medium;
     font-size: 4vw;
 }
+
+.pagination a {
+    color: #fff;
+}
+
+.pagination{
+    background-color: #182a44;
+}
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 
     /* Küçük tabletler için stil */
@@ -728,7 +703,7 @@
     }
 
     .download-button-link {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     .release-notes .notes .release-notes-title {
@@ -799,7 +774,7 @@
     }
 
     .download-button-link {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     .release-notes .notes .release-notes-title {
@@ -870,7 +845,7 @@
     }
 
     .download-button-link {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     .release-notes .notes .release-notes-title {
