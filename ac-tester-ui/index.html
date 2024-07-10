@@ -930,6 +930,26 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                 }
             }
 
+            document.body.ontouchmove =  function (event) {
+                
+                const hamburgerMenu = document.getElementById('hamburger-menu');
+                if (!hamburgerMenu.contains(event.target)) {
+                    console.log('inside ontouchmove', event);
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                }
+            }
+            document.body.onscroll =  function (event) {
+               
+                const hamburgerMenu = document.getElementById('hamburger-menu');
+                if (!hamburgerMenu.contains(event.target)) {
+                    console.log('INSIDE SCROLL', event);
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                }
+            }
             $(page).addClass('blur');
             $(hamburgerMenu).removeClass('hidden');
             $(hamburgerMenu).removeClass('container-collapsed');
@@ -938,9 +958,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             hamburgerMenu.style.height = (window.innerHeight) + 'px';
             //document.body.style.maxHeight = (window.innerHeight) + 'px';
             document.body.style.overflow = 'hidden';
-            page.addEventListener('scroll', preventScroll, { passive: false });
-            page.addEventListener('touchmove', preventScroll, { passive: false });
-            page.addEventListener('whell', preventScroll, { passive: false });
         }
 
         function handleResize() {
