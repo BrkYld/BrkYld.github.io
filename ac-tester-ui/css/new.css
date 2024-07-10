@@ -551,7 +551,7 @@
     padding: 10px;
 }
 
-.guideline-modal .content-container .text {
+.guideline-modal-text {
     margin-top: 8px;
     font-size: 4vw;
     color: #D8D8D8;
@@ -729,7 +729,7 @@
         font-size: 1rem;
     }
   
-    .guideline-modal .content-container .text {
+    .guideline-modal-text {
         margin-top: 8px;
         font-size: 1rem;
         color: #D8D8D8;
@@ -1088,7 +1088,7 @@
         font-family: HelveticaNeue;
     }
 
-    .guideline-modal .content-container .text {
+    .guideline-modal-text {
         margin-top: 8px;
         font-size: 2vw;
         color: #D8D8D8;
