@@ -865,13 +865,13 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                         1. Open the app and tap “Cancel” on the “Untrusted Enterprise Developer”
                         notification.
                     </li>
-                    <li class="guideline-modal-text">
+                    <li class="guideline-modal-text guideline-modal-text-1">
                         2. Go to Settings, then navigate to General > Device Management.
                     </li>
-                    <li class="guideline-modal-text">
+                    <li class="guideline-modal-text guideline-modal-text-2">
                         3. Under Enterprise App, tap the name of your organization.
                     </li>
-                    <li class="guideline-modal-text">
+                    <li class="guideline-modal-text guideline-modal-text-3">
                         4 .Tap “Trust [Your Organization Name]” and confirm by tapping “Trust”
                         again.
                     </li>
@@ -962,7 +962,6 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
         }
 
         function handleResize() {
-            console.log('RESIZE HANDLED');
             var currentHeight = window.innerHeight;
             document.getElementById('hamburger-menu').style.height = currentHeight + 'px';
             document.getElementById('page-main-section').style.height = currentHeight + 'px';
@@ -989,8 +988,9 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             const titleStyle = window.getComputedStyle(title);
             document.body.style.overflow = 'hidden';
             content.querySelectorAll('li').forEach(item => {
-                console.log('FONT SIZE => ', titleStyle.fontSize);
-                item.style.fontSize = titleStyle.fontSize;
+
+                //item.style.fontSize = "10px"
+               
             });
             document.body.onclick = function (event) {
                 const installGuide = document.getElementById('guideline-modal');
