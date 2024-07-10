@@ -792,9 +792,7 @@
     }
 
     .help-modal .title-container .title {
-        font-size: 4vw;
-        color: #D8D8D8;
-        font-family: HelveticaNeue;
+        font-size: 1.5vw;
     }
 
     .help-modal .content-container {
@@ -804,10 +802,11 @@
 
     .help-modal .content-container li {
         margin-top: 8px;
-        font-size: 4vw;
+        font-size: 1.5vw !important;
         color: #D8D8D8;
         font-family: HelveticaNeue;
         line-height: 1.5em;
+        -webkit-text-size-adjust: 100%;
     }
 
     .help-modal .content-container li:first-child {
@@ -823,18 +822,11 @@
 
     .help-modal .button-container .button {
         width: 75%;
-        height: 40%;
-        background-color: #FF8F34;
-        border-radius: 6px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 80%;
     }
 
     .help-modal .button-container .button span {
-        color: white;
-        font-family: HelveticaNeue-Medium;
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
 }
