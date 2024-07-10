@@ -986,7 +986,9 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(installGuide).removeClass('hidden');
             document.body.style.overflow = 'hidden';
             content.querySelectorAll('li').forEach(item => {
-                item.style.fontSize = "10px";
+                const style = window.getComputedStyle(item);
+                const fontSize = style.getPropertyValue('font-size');
+                item.style.fontSize = fontSize;
             });
             document.body.onclick = function (event) {
                 const installGuide = document.getElementById('guideline-modal');
