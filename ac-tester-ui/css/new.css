@@ -732,7 +732,8 @@
     .guideline-modal .content-container .text {
         margin-top: 8px;
         font-size: 1rem;
-        color: #D8D8D8;
+        /* color: #D8D8D8; */
+        color: red;
         font-family: HelveticaNeue;
         line-height: 1.5em;
     }
