@@ -735,6 +735,7 @@
         color: #D8D8D8;
         font-family: HelveticaNeue;
         line-height: 1.5em;
+        -webkit-text-size-adjust: 100%;
     }
 
     .guideline-modal .content-container li:first-child {
