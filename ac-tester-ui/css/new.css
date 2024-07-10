@@ -730,8 +730,8 @@
     }
 
 
-    .guideline-modal .content-container li {
-        font-size: 10px;
+    .guideline-modal .content-container .list-item {
+        font-size: 2vw;
     }
 
     .guideline-modal .content-container li:first-child {
