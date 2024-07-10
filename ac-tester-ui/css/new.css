@@ -726,7 +726,8 @@
 
 
     .guideline-modal .title-container .title {
-        font-size: 2vw;
+        /* font-size: 2vw; */
+        font-size: 50px;
     }
 
 
