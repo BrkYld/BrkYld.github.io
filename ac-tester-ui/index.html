@@ -988,6 +988,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             content.querySelectorAll('li').forEach(item => {
                 const style = window.getComputedStyle(item);
                 const fontSize = style.getPropertyValue('font-size');
+                console.log('FONT SIZE => ', fontSize);
                 item.style.fontSize = fontSize;
             });
             document.body.onclick = function (event) {
