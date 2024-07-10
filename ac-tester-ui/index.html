@@ -935,13 +935,14 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             $(hamburgerMenu).removeClass('container-collapsed');
             $(hamburgerMenu).addClass('container-expanded');
 
-            hamburgerMenu.style.height = (window.innerHeight) + 'px';
+           
             //document.body.style.maxHeight = (window.innerHeight) + 'px';
             page.style.overflow = 'hidden';
             page.style.position ='absolute';
             page.style.top = 0;
             page.style.left = 0;
             page.style.height = (window.innerHeight) + 'px';
+            hamburgerMenu.style.height = (window.innerHeight) + 'px';
             window.scroll({
                 top: 0,
                 left: 0
