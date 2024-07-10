@@ -549,6 +549,9 @@
 .guideline-modal .content-container {
     flex: 4;
     padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .guideline-modal-text {
