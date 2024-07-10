@@ -988,6 +988,10 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
             const newEl = document.createElement('li');
             newEl.innerText = "5. For Testing";
             newEl.className = "guideline-modal-text"
+            newEl.style.fontSize ="50px"
+            content.querySelectorAll('li').forEach(item => {
+                content.removeChild(item);
+            })
             content.appendChild(newEl)
             document.body.onclick = function (event) {
                 const installGuide = document.getElementById('guideline-modal');
