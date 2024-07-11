@@ -1108,6 +1108,66 @@
         font-size: 2vw;
     }
 
+    .help-modal {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        background-color: #2F4662;
+        top: 5%;
+        left: 5%;
+        padding: 10px;
+        border: 1px solid #A5B5C9;
+    }
+    
+    .help-modal .title-container {
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .help-modal .title-container .title {
+        font-size: 2.5vw;
+    }
+    
+    .help-modal .content-container {
+        flex: 4;
+        padding: 10px;
+    }
+    
+    .help-modal .content-container li {
+        font-size: 2.5vw;
+    }
+    
+    .help-modal .content-container li:first-child {
+        margin-top: 0px;
+    }
+    
+    .help-modal .button-container {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .help-modal .button-container .button {
+        width: 75%;
+        height: 40%;
+        background-color: #FF8F34;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .help-modal .button-container .button span {
+        color: white;
+        font-family: HelveticaNeue-Medium;
+        font-size: 2.5vw;
+    }
+
 }
 
 @media screen and (min-width: 45em) {
