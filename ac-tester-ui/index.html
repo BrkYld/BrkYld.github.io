@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -16,12 +17,12 @@
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="css/bundle.min.css">
     <link rel="stylesheet" href="css/new.css ">
-
+    <link rel="stylesheet" href="css/download-page.css">
     <!--<![endif]-->
 </head>
 
 <body>
-    <div class="page">
+    <div id="page" class="page">
         <section id="page-main-section" class="primary fluid">
             <div class="content-margins fluid">
 
@@ -569,7 +570,8 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
         <div id="hamburger-menu" class="container-collapsed hidden">
             <div class="hamburger-header">
                 <span class="hamburger-header-title">PROFILES SHARED WITH ME</span>
-                <span class="hamburger-header-subtitle">You can switch between the current and other shared app profiles.</span>
+                <span class="hamburger-header-subtitle">You can switch between the current and other shared app
+                    profiles.</span>
             </div>
             <div style="overflow: auto;">
                 <section id="hamburger-menu-existing-profile">
@@ -620,9 +622,9 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                             <div class="hamburger-menu-separator-container">
                                 <div class="hamburger-menu-separator"></div>
                             </div>
-                           
+
                         </li>
-                        
+
                         <li class="hamburger-menu-list-item">
                             <div class="hamburger-menu-item">
                                 <div class="image-container">
@@ -866,7 +868,7 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                 <span id="guideline-title" class="title">Download the app and then confirm.</span>
             </div>
             <div class="content-container">
-             
+
                 <ul id="guideline-content">
                     <li class="guideline-modal-text">
                         1. Open the app and tap “Cancel” on the “Untrusted Enterprise Developer”
@@ -885,8 +887,11 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
                 </ul>
             </div>
             <div class="button-container">
-                <div onclick="hideInstallGuide()" class="button">
-                    <span>Proceed</span>
+                <div onclick="hideInstallGuide('Android')" class="button">
+                    <span>Android</span>
+                </div>
+                <div onclick="hideInstallGuide('iOS')" class="button">
+                    <span>iOS</span>
                 </div>
             </div>
         </div>
@@ -910,6 +915,61 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
         </div>
         <input type="hidden" value="anonymous@appcircle.io">
     </div>
+
+    <div id="download-guideline-ios" style="width: 0px; height: 0px; visibility: hidden;">
+        <div class="container" style="height: 100%;">
+            <div class="download-page-header">
+                <button id="download-page-close-button" class="close close-button"></button>
+                <div class="home-screen-display" aria-hidden="true" tabindex="-1">
+                    <div class="app-container">
+                        <div class="app-icon-container">
+                            <img class="app-icon" alt
+                                src="https://coreservicesstorgeprod.blob.core.windows.net/app-avatar-container/a719254c-ac6e-4f87-9c20-8b7e535119bf?st=2024-08-06T09%3A28%3A31Z&se=2024-08-20T10%3A28%3A31Z&sp=r&sv=2018-03-28&sr=b&sig=ts185ZzSLkoW4S0ipMp035uOC8pZNBkv7b1dkO4i6BE%3D"
+                                style="width: 33px; height: 33px;" />
+                        </div>
+                        <div class="app-title">iGAiN-TestApp</div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-page-downloading-container">
+                <h2>Downloading...</h2>
+                <div class="description">Go to home screen to check progress.</div>
+            </div>
+            <div class="download-page-footer">
+                <a target="_blank" href="https://docs.appcircle.io/testing-distribution/testing-portal">Need help?</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="download-guideline-android" style="width: 0px; height: 0px; visibility: hidden;">
+        <div class="container" style="height: 100%;">
+            <div class="download-page-header">
+                <button id="download-page-close-button" class="close close-button"></button>
+                <div class="home-screen-display" aria-hidden="true" tabindex="-1">
+                    <div class="app-container">
+                        <div class="app-icon-container">
+                            <img class="app-icon" alt
+                                src="https://coreservicesstorgeprod.blob.core.windows.net/app-avatar-container/a719254c-ac6e-4f87-9c20-8b7e535119bf?st=2024-08-06T09%3A28%3A31Z&se=2024-08-20T10%3A28%3A31Z&sp=r&sv=2018-03-28&sr=b&sig=ts185ZzSLkoW4S0ipMp035uOC8pZNBkv7b1dkO4i6BE%3D"
+                                style="width: 18px; height: 18px;" />
+                        </div>
+                        <div class="app-title-container">
+                            <div class="title">iGAiN-TestApp-Android.apk</div>
+                            <div class="subtitle">download complete</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-page-downloading-container">
+                <h2>Downloading...</h2>
+                <div class="description">Tap on the notification and INSTALL when the download is finished.</div>
+            </div>
+            <div class="download-page-footer">
+                <a target="_blank" href="https://docs.appcircle.io/testing-distribution/testing-portal">Need help?</a>
+            </div>
+        </div>
+    </div>
+
+
     <script type="text/javascript" nonce="">
         function timeDifference(e, a) { var o = e - a; return o < 6e4 ? Math.round(o / 1e3) + " seconds ago" : o < 36e5 ? Math.round(o / 6e4) + " minutes ago" : o < 864e5 ? Math.round(o / 36e5) + " hours ago" : o < 2592e6 ? Math.round(o / 864e5) + " days ago" : o < 31536e6 ? Math.round(o / 2592e6) + " months ago" : Math.round(o / 31536e6) + " years ago" }
     </script>
@@ -976,13 +1036,19 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
 
 
         window.addEventListener('resize', handleResize);
-        function hideInstallGuide() {
+        function hideInstallGuide(platform) {
             const installGuide = document.getElementById('guideline-modal');
             const page = document.getElementById('page-main-section');
             $(page).removeClass('blur');
             $(installGuide).addClass('hidden');
             document.body.onclick = null;
             document.body.style.overflow = 'auto';
+            if(platform === 'iOS'){
+                showiOS();
+            }else {
+                showAndroid();
+            }
+           
         }
         function showInstallGuide() {
             event.stopPropagation();
@@ -1125,6 +1191,36 @@ Web güvenliği de son derece önemlidir. SSL sertifikaları, güvenli veri ilet
         });
     </script>
 
+    <script id="downlad-guideline-script" type="text/javascript" nonce="">
+        const showiOS = () => {
+            var page = document.getElementById('page');
+            var pageContent = page.innerHTML;
+            var downloadGuideline = document.getElementById('download-guideline-ios');
+            var downloadGuidelineContent = downloadGuideline.innerHTML;
+            page.innerHTML = downloadGuidelineContent;
+            page.className = "download-page-ios"
+            var downloadPageCloseButton = document.getElementById("download-page-close-button");
+            downloadPageCloseButton.onclick = function () {
+                page.innerHTML = pageContent;
+                page.className = "page"
+            }
+        }
+
+        const showAndroid = () => {
+            var page = document.getElementById('page');
+            var pageContent = page.innerHTML;
+            var downloadGuideline = document.getElementById('download-guideline-android');
+            var downloadGuidelineContent = downloadGuideline.innerHTML;
+            page.innerHTML = downloadGuidelineContent;
+            page.className = "download-page-android"
+            var downloadPageCloseButton = document.getElementById("download-page-close-button");
+            downloadPageCloseButton.onclick = function () {
+                page.innerHTML = pageContent;
+                page.className = "page"
+            }
+        }
+
+    </script>
     <script nonce="">
         $(document).ready(function () {
 
